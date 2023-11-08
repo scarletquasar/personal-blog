@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
 }
 
 :root {
@@ -9,5 +10,5 @@
   }
   
 body {
-background-color: #1a1a1a;
+  background-color: #1a1a1a;
 }
