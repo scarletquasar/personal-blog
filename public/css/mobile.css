@@ -71,6 +71,11 @@
         justify-content: space-around;
     }
 
+    .work-grid h2 {
+        border: none;
+        line-height: 18px;
+    }
+
     .work-card {
         margin-top: 4%;
         border: 1px solid white;
