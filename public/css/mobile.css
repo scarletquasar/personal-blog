@@ -1,6 +1,6 @@
 @media (max-width: 800px) {
     * {
-        line-height: 18px;
+        line-height: 20px;
     }
 
     nav {
@@ -94,6 +94,11 @@
     .work-card h4 {
         margin-top: 1%;
         font-size: 11px;
+    }
+
+    .article-title {
+        font-family: 'JetBrains Mono', 'Consolas';
+        line-height: 24px;
     }
 }
 
