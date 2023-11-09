@@ -39,6 +39,10 @@
     h2 {
         font-size: 18px;
         color: #fff;
+        border-bottom: 1px solid white;
+        width: 80%;
+        max-width: 260px;
+        line-height: 30px;
     }
       
     h3 {
