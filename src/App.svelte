@@ -3,6 +3,13 @@
     <img width="45" height="45" src="https://img.icons8.com/ios/50/FFFFFF/lambda.png" alt="lambda"/>
     <h1>Scarlet Victoria</h1>
   </nav>
+  <div id="links">
+    <a href='/public/articles.html'>articles</a>
+    <a href='/public/skills .html'>skills</a>
+    <span> | </span>
+    <a href='/public/skills .html'>resume</a>
+    <a href='/public/skills .html'>linkedin</a>
+  </div>
   <section id="introduction">
     <h1>About me</h1>
 
@@ -50,7 +57,7 @@
           </h4>
         </div>
       </div>
-      
+
       <div id="cityjs" class="work-card">
         <div>
           <h2>CityJS Brazil Lecture</h2>
@@ -61,7 +68,9 @@
           </h4>
         </div>
       </div>
-
     </div>
   </section>
+  <footer>
+
+  </footer>
 </main>

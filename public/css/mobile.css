@@ -16,6 +16,20 @@
         margin-right: 4%;
         margin-left: 2%;
     }
+
+    #links {
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        border-bottom: 1px solid white;
+        padding-inline: 3%;
+        place-items: center;
+    }
+
+    #links > a {
+        text-decoration: underline;
+        margin-inline: 1.5%;
+    }
       
     h1 {
         font-size: 24px;
@@ -80,5 +94,11 @@
     .work-card h4 {
         margin-top: 1%;
         font-size: 11px;
+    }
+}
+
+@media (max-width: 400px) {
+    #links {
+        justify-content: center;
     }
 }

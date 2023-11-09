@@ -18,6 +18,10 @@ body {
   background-color: #1a1a1a;
 }
 
+#links > span {
+  color: white;
+}
+
 #cityjs {
   background-image: url('/assets/city-js.jpg');
 }
