@@ -7,8 +7,8 @@
     <a href='/public/articles.html'>articles</a>
     <a href='/public/skills .html'>skills</a>
     <span> | </span>
-    <a href='/public/skills .html'>resume</a>
-    <a href='/public/skills .html'>linkedin</a>
+    <a target='_blank' href='https://github.com/scarletquasar/resume-repository/blob/db79070ce39aa7e9c97f0d990a658886f18f924e/Scarlet%20Victoria%20Resume.pdf'>resume</a>
+    <a target='_blank' href='https://www.linkedin.com/in/scarletrose/'>linkedin</a>
   </div>
   <section id="introduction">
     <h1>About me</h1>
