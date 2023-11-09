@@ -109,6 +109,20 @@
         font-family: 'JetBrains Mono', 'Consolas';
         line-height: 24px;
     }
+
+    .post-index {
+        font-size: 18px;
+        height: 60px;
+        border-bottom: 1px solid white;
+    }
+}
+
+@media (max-width: 669px) {
+    .post-index {
+        font-size: 14px;
+        height: 70px;
+        border-bottom: 1px solid white;
+    }
 }
 
 @media (max-width: 400px) {
