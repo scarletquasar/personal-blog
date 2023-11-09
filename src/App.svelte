@@ -39,17 +39,29 @@
 
     <h2>Lectures</h2>
 
-
-
-    <div id="cityjs" class="work-card">
-      <div>
-        <h2>CityJS Brazil Lecture</h2>
-        <h3>March 2023</h3>
-        <h4>
-          Presented a quick lecture about the DX impact of modern techcnial tooling in teams. Talked
-          about my JavaScript runtime project "Melon".
-        </h4>
+    <div class="work-grid">
+      <div id="nodebr" class="work-card">
+        <div>
+          <h2>Node Brazil Lecture</h2>
+          <h3>June 2023</h3>
+          <h4>
+            Presented a talk about cross-platform easy automation execution using Node.js itself instead
+            of any scripting language.
+          </h4>
+        </div>
       </div>
+      
+      <div id="cityjs" class="work-card">
+        <div>
+          <h2>CityJS Brazil Lecture</h2>
+          <h3>March 2023</h3>
+          <h4>
+            Presented a quick lecture about the DX impact of modern techcnial tooling in teams. Talked
+            about my JavaScript runtime project "Melon".
+          </h4>
+        </div>
+      </div>
+
     </div>
   </section>
 </main>
