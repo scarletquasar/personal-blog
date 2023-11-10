@@ -48,6 +48,34 @@
                 </p>
 
                 <h2>Planning a Migration</h2>
+                <p>
+                    The "Planning a Migration" chapter starts questioning the reader: is a microservices migration really neccessary? Don't
+                    you prefer using a modular monolith? And starts explaining about that with some real use-cases where teams didn't
+                    actually need microservices but din't really think about building a modular monolith. But the concern is: Sam knew that
+                    microservices are a cool idea and would sound perfect for any unexperienced team as a solution for all the problems, but
+                    he also knew that it is not true and could cause a lot of new problems that would bring the effect "sunk cost fallacy" - where
+                    the cost of the operations could not be recovered, ever.
+                </p>
+                <p>
+                    What can cause "sunk cost fallacy" in that context? - Let's suppose you have a small team (I'm talking about 3 - 4) developers
+                    and the product (application) that is a coupled monolith starts having performance problems and is in a point where the
+                    codebase is almost unmaintainable. Without knowing - due to the difficulty to debug and discover the real problems of
+                    the application - that the performance problem was related uniquely to the database overload since there is no caching strategy
+                    at all in the code, they make a unplanned and decide to implement "microservices". Months later the company starts losing
+                    the triple of the money that it firstly paid in overall infrastructure, but why? According to the book the process can
+                    start failing in some points.
+                </p>
+                <p>
+                    The first point is maintainability: a migration won't be suitable for changes and refactoring. If the application is already
+                    hard to maintain, migrating it directly to a microservices structure can be a hard thing, but the real problem is when the
+                    developers try to rewrite the code behavior (famous "refactoring without tests") and fix common problems during the migration -
+                    what can cause even more problems due to the lack of a solid code to use as truth base.
+                </p>
+                <p>
+                    The second point is responsibility segregation: with diverse microservices that are not actively worked on, a lot of unexpected
+                    behaviors can happen, for example, some responsibilities can be messy or separated, like two different microservices participating
+                    in doing the same thing or one single microservices with more than one responsibility.
+                </p>
             </section>
         </main>
     </body>
