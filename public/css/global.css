@@ -7,7 +7,7 @@
 
 a {
   text-decoration: none;
-  color: white;
+  color: rgb(230, 230, 230);;
 }
 
 :root {
@@ -19,7 +19,7 @@ body {
 }
 
 #links > span {
-  color: white;
+  color: rgb(230, 230, 230);
 }
 
 #cityjs {
