@@ -5,9 +5,18 @@
     font-family: 'JetBrains Mono', monospace;
 }
 
+#links, nav {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+button { 
+  color: rgb(230, 230, 230);
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
-  color: rgb(230, 230, 230);;
+  color: rgb(230, 230, 230);
 }
 
 :root {

@@ -1,14 +1,15 @@
+<nav>
+  <img width="45" height="45" src="https://img.icons8.com/ios/50/FFFFFF/lambda.png" alt="lambda"/>
+  <h1>Scarlet Victoria</h1>
+</nav>
+<div id="links">
+  <a href='/posts.html'>posts</a>
+  <a target='_blank' href='https://github.com/scarletquasar'>github</a>
+  <a target='_blank' href='#'>portfolio</a>
+  <a target='_blank' href='https://www.linkedin.com/in/scarletrose/'>linkedin</a>
+</div>
 <main>
-  <nav>
-    <img width="45" height="45" src="https://img.icons8.com/ios/50/FFFFFF/lambda.png" alt="lambda"/>
-    <h1>Scarlet Victoria</h1>
-  </nav>
-  <div id="links">
-    <a href='/posts.html'>posts</a>
-    <a target='_blank' href='https://github.com/scarletquasar'>github</a>
-    <a target='_blank' href='#'>portfolio</a>
-    <a target='_blank' href='https://www.linkedin.com/in/scarletrose/'>linkedin</a>
-  </div>
+
   <section id="introduction">
     <h1>About me</h1>
 
@@ -75,19 +76,19 @@
     </p>
 
     <div class="contact-grid"> 
-      <div id="linkedin" class="contact-card">
+      <button on:click={() => window.open('https://www.linkedin.com/in/scarletrose/')} id="linkedin" class="contact-card">
         <div>
           LinkedIn scarletrose
         </div>
-      </div>
-      <div id="twitter" class="contact-card">
+      </button>
+      <button on:click={() => window.open('https://twitter.com/scarletrosedev')} id="twitter" class="contact-card">
         <div>
           Twitter scarletrosedev
         </div>
-      </div>
+      </button>
     </div>
   </section>
-  <footer>
-
-  </footer>
 </main>
+<footer>
+  Scarlet Victoria © {new Date().getFullYear().toString()}
+</footer>
