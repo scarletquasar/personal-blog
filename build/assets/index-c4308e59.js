@@ -2,16 +2,16 @@ var oe=Object.defineProperty;var ae=(e,t,n)=>t in e?oe(e,t,{enumerable:!0,config
       software developer with <b>7+</b> years of hands on experience with software development,
       architecture, leadership and product development from zero to deployment. During my experience time
       I have dealt with a lot of different situations - I&#39;ve worked in 3 different fintechs, one bank, an
-      ERP application, a radiation management device ecosystem and much more.`,L=d(),u=l("p"),u.textContent=`My passion is to create tooling and libraries, I am an active open-source contributor in my free time and 
-      very interested in matters like natural language processing, graph discovery and manipulation algorithms,
-      utility-focused web crawling and automation. I've been coding since I was 12 and I see the development work
-      as a thing that I want to do for my life.`,S=d(),_=l("p"),_.textContent=`My technical background is huge - I had to deal with several languages in my carreer, the most remarkable
-      ones were: C#, F#, Golang, Rust, JavaScript/TypeScript, Zig, C/C++ and a little of Erlang.
-      I am also an academic person, got a technology bachelor's degree in Information Systems
-      in 2022 and I'm going for a bachelor's degree in Software Engineering with ending prevision for 2027. After that,
-      my objectives are getting a master's degree and in a long term future, a PhD in mathematics.`,E=d(),j=l("h1"),j.textContent="My work",z=d(),T=l("p"),T.textContent=`Currently, as previously mentioned, I work in a lot of different things a time. I like to write 
-      (articles, books, documentation...), contribute in open-source projects and participate in lectures and programming
+      ERP application, a radiation management device ecosystem and much more.`,L=d(),u=l("p"),u.textContent=`My passion is to create tooling and libraries, I am an active open-source contributor in my free time and \r
+      very interested in matters like natural language processing, graph discovery and manipulation algorithms,\r
+      utility-focused web crawling and automation. I've been coding since I was 12 and I see the development work\r
+      as a thing that I want to do for my life.`,S=d(),_=l("p"),_.textContent=`My technical background is huge - I had to deal with several languages in my carreer, the most remarkable\r
+      ones were: C#, F#, Golang, Rust, JavaScript/TypeScript, Zig, C/C++ and a little of Erlang.\r
+      I am also an academic person, got a technology bachelor's degree in Information Systems\r
+      in 2022 and I'm going for a bachelor's degree in Software Engineering with ending prevision for 2027. After that,\r
+      my objectives are getting a master's degree and in a long term future, a PhD in mathematics.`,E=d(),j=l("h1"),j.textContent="My work",z=d(),T=l("p"),T.textContent=`Currently, as previously mentioned, I work in a lot of different things a time. I like to write \r
+      (articles, books, documentation...), contribute in open-source projects and participate in lectures and programming\r
       communities.`,G=d(),N=l("div"),N.innerHTML=`<div id="nodebr" class="work-card"><div><h2>Node Brazil Lecture</h2> <h3>June 2023</h3> <h4>Presented a talk about cross-platform easy automation execution using Node.js itself instead
             of any scripting language.</h4></div></div> <div id="cityjs" class="work-card"><div><h2>CityJS Brazil Lecture</h2> <h3>March 2023</h3> <h4>Presented a quick lecture about the DX impact of modern techcnial tooling in teams. Talked
-            about my JavaScript runtime project &quot;Melon&quot;.</h4></div></div>`,K=d(),F=l("h1"),F.textContent="Contact",U=d(),A=l("p"),A.textContent=`If you want to contact me professionally, or just want to discuss some topic related about my posts or
+            about my JavaScript runtime project &quot;Melon&quot;.</h4></div></div>`,K=d(),F=l("h1"),F.textContent="Contact",U=d(),A=l("p"),A.textContent=`If you want to contact me professionally, or just want to discuss some topic related about my posts or\r
       my open source work, you can find me through these ways:`,X=d(),w=l("div"),b=l("button"),b.innerHTML="<div>LinkedIn scarletrose</div>",Y=d(),v=l("button"),v.innerHTML="<div>Twitter scarletrosedev</div>",H=d(),P=l("footer"),P.textContent=`Scarlet Victoria © ${new Date().getFullYear().toString()}`,h(i,"id","links"),h(j,"class","work-title"),h(N,"class","work-grid"),h(b,"id","linkedin"),h(b,"class","contact-card"),h(v,"id","twitter"),h(v,"class","contact-card"),h(w,"class","contact-grid"),h(r,"id","introduction")},m(f,g){y(f,t,g),y(f,n,g),y(f,i,g),y(f,o,g),y(f,s,g),a(s,r),a(r,C),a(r,p),a(r,c),a(r,L),a(r,u),a(r,S),a(r,_),a(r,E),a(r,j),a(r,z),a(r,T),a(r,G),a(r,N),a(r,K),a(r,F),a(r,U),a(r,A),a(r,X),a(r,w),a(w,b),a(w,Y),a(w,v),y(f,H,g),y(f,P,g),q||(Z=[W(b,"click",e[0]),W(v,"click",e[1])],q=!0)},p:x,i:x,o:x,d(f){f&&(m(t),m(n),m(i),m(o),m(s),m(H),m(P)),q=!1,O(Z)}}}function xe(e){return[()=>window.open("https://www.linkedin.com/in/scarletrose/"),()=>window.open("https://twitter.com/scarletrosedev")]}class Ie extends ve{constructor(t){super(),be(this,t,xe,$e,se,{})}}new Ie({target:document.getElementById("app")});
