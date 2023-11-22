@@ -3,7 +3,7 @@
   <h1>Scarlet Victoria</h1>
 </nav>
 <div id="links">
-  <a href='/posts.html'>posts</a>
+  <a href='./posts.html'>posts</a>
   <a target='_blank' href='https://github.com/scarletquasar'>github</a>
   <a target='_blank' href='#'>portfolio</a>
   <a target='_blank' href='https://www.linkedin.com/in/scarletrose/'>linkedin</a>
