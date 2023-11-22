@@ -35,15 +35,13 @@
       my objectives are getting a master's degree and in a long term future, a PhD in mathematics.
     </p>
 
-    <h1>My work</h1>
+    <h1 class="work-title">My work</h1>
 
     <p>
       Currently, as previously mentioned, I work in a lot of different things a time. I like to write 
       (articles, books, documentation...), contribute in open-source projects and participate in lectures and programming
       communities.
     </p>
-
-    <h2>Lectures</h2>
 
     <div class="work-grid">
       <div id="nodebr" class="work-card">
@@ -65,6 +63,26 @@
             Presented a quick lecture about the DX impact of modern techcnial tooling in teams. Talked
             about my JavaScript runtime project "Melon".
           </h4>
+        </div>
+      </div>
+    </div>
+
+    <h1>Contact</h1>
+
+    <p>
+      If you want to contact me professionally, or just want to discuss some topic related about my posts or
+      my open source work, you can find me through these ways:
+    </p>
+
+    <div class="contact-grid"> 
+      <div id="linkedin" class="contact-card">
+        <div>
+          LinkedIn scarletrose
+        </div>
+      </div>
+      <div id="twitter" class="contact-card">
+        <div>
+          Twitter scarletrosedev
         </div>
       </div>
     </div>
