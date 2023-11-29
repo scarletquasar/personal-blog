@@ -1,20 +1,113 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/mobile.css" />
-    <link rel="stylesheet" href="./css/desktop.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=JetBrains+Mono:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Scarlet Victoria</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="./src/main.ts"></script>
-  </body>
+    <head>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/global.css" />
+        <link rel="stylesheet" href="./css/mobile.css" />
+        <link rel="stylesheet" href="./css/desktop.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Scarlet Victoria</title>
+    </head>
+    <body>
+        <nav>
+            <img width="45" height="45" src="https://img.icons8.com/ios/50/FFFFFF/lambda.png" alt="lambda"/>
+            <h1><a href='/'>Scarlet Victoria</a></h1>
+        </nav>
+        <div id="links">
+          <a href='./posts.html'>posts</a>
+          <a target='_blank' href='https://github.com/scarletquasar'>github</a>
+          <a href='./portfolio.html'>portfolio</a>
+          <a target='_blank' href='https://www.linkedin.com/in/scarletrose/'>linkedin</a>
+        </div>
+        <main>
+        
+          <section id="introduction">
+            <h1>About me</h1>
+        
+            <p>
+              Hello. My name is Scarlet Victoria Rose, but I usually go for only Scarlet or Victoria. I am a
+              software developer with <b>7+</b> years of hands on experience with software development,
+              architecture, leadership and product development from zero to deployment. During my experience time
+              I have dealt with a lot of different situations - I've worked in 3 different fintechs, one bank, an
+              ERP application, a radiation management device ecosystem and much more.
+            </p>
+        
+            <p>
+              My passion is to create tooling and libraries, I am an active open-source contributor in my free time and 
+              very interested in matters like natural language processing, graph discovery and manipulation algorithms,
+              utility-focused web crawling and automation. I've been coding since I was 12 and I see the development work
+              as a thing that I want to do for my life.
+            </p>
+        
+            <p>
+              My technical background is huge - I had to deal with several languages in my carreer, the most remarkable
+              ones were: C#, F#, Golang, Rust, JavaScript/TypeScript, Zig, C/C++ and a little of Erlang.
+              I am also an academic person, got a technology bachelor's degree in Information Systems
+              in 2022 and I'm going for a bachelor's degree in Software Engineering with ending prevision for 2027. After that,
+              my objectives are getting a master's degree and in a long term future, a PhD in mathematics.
+            </p>
+        
+            <h1 class="work-title">My work</h1>
+        
+            <p>
+              Currently, as previously mentioned, I work in a lot of different things a time. I like to write 
+              (articles, books, documentation...), contribute in open-source projects and participate in lectures and programming
+              communities.
+            </p>
+        
+            <div class="work-grid">
+              <div id="nodebr" class="work-card">
+                <div>
+                  <h2>Node Brazil Lecture</h2>
+                  <h3>June 2023</h3>
+                  <h4>
+                    Presented a talk about cross-platform easy automation execution using Node.js itself instead
+                    of any scripting language.
+                  </h4>
+                </div>
+              </div>
+        
+              <div id="cityjs" class="work-card">
+                <div>
+                  <h2>CityJS Brazil Lecture</h2>
+                  <h3>March 2023</h3>
+                  <h4>
+                    Presented a quick lecture about the DX impact of modern techcnial tooling in teams. Talked
+                    about my JavaScript runtime project "Melon".
+                  </h4>
+                </div>
+              </div>
+            </div>
+        
+            <h1>Contact</h1>
+        
+            <p>
+              If you want to contact me professionally, or just want to discuss some topic related about my posts or
+              my open source work, you can find me through these ways:
+            </p>
+        
+            <div class="contact-grid"> 
+              <button onclick="window.open('https://www.linkedin.com/in/scarletrose/')" id="linkedin" class="contact-card">
+                <div>
+                  LinkedIn scarletrose
+                </div>
+              </button>
+              <button onclick="window.open('https://twitter.com/scarletrosedev')" id="twitter" class="contact-card">
+                <div>
+                  Twitter scarletrosedev
+                </div>
+              </button>
+            </div>
+          </section>
+        </main>
+        <footer>
+          <script>
+              const footerText = `Scarlet Victoria © ${new Date().getFullYear().toString()}`;
+              document.getElementsByTagName("footer")[0].innerHTML = footerText;
+          </script>
+          <noscript>
+              © Scarlet Victoria
+          </noscript>
+        </footer>          
+    </body>
 </html>

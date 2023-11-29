@@ -79,6 +79,11 @@
         margin-bottom: 2%;
     }
 
+    section > h2 {
+        font-size: 1.4em;
+        margin-bottom: 2%;
+    }
+
     .work-title {
         margin-top: 6%;
     }
@@ -172,5 +177,17 @@
         justify-content: center;
         font-family: 'JetBrains Mono';
         background-color: rgb(19, 19, 19);
+    }
+
+    .article-title {
+        line-height: 30px;
+    }
+
+    .post-index > h3 > a {
+        font-size: 1.5em;
+    }
+
+    .post-index > small {
+        font-size: 0.8em;
     }
 }
