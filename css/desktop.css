@@ -142,13 +142,13 @@
 
     .contact-card {
         display: flex;
-        font-size: 12px;
+        font-size: 14px;
         text-align: center;
         font-family: 'JetBrains Mono';
         margin-top: 4%;
         border: 1px solid rgb(230, 230, 230);;
-        width: 120px;
-        height: 120px;
+        width: 125px;
+        height: 125px;
         margin-bottom: 5%;
         background-size: cover;
         background-position: center;
@@ -161,7 +161,7 @@
     }
 
     #linkedin {
-        background: linear-gradient(45deg, #27325a, #43528a);
+        background: linear-gradient(45deg, #3d414d, #71778f);
     }
 
     #twitter {
