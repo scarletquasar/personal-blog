@@ -32,10 +32,10 @@ body {
 }
 
 #cityjs {
-  background-image: url('/assets/city-js.jpg');
+  background-image: url('../assets/city-js.jpg');
 }
 
 #nodebr {
-  background-image: url('/assets/node-br.jpg');
+  background-image: url('../assets/node-br.jpg');
   background-position: 0 50%;
 }
