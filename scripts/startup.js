@@ -32,7 +32,7 @@ class App {
         dark: {
             primary: '#e8e9ed',
             secondary: '#23272a',
-            borders: '#e8e9ed',
+            borders: '#ffffff',
             primaryAlternative: '#5e6870'
         }
     }
