@@ -39,6 +39,10 @@ class App {
 
     static currentPageContent = [];
     static pageContent = [];
+
+    static toggleTheme() {
+        this.theme.current = this.theme.current === 'light' ? 'dark' : 'light';
+    }
 }
 
 function updatePageContent() {
@@ -50,10 +54,11 @@ function updatePageContent() {
         Navbar(
             Title(App.consts[App.consts.current].title),
             NavButtons({
-                [App.consts[App.consts.current].blog]: 'Navigation.goTo(`blog`)',
-                [App.consts[App.consts.current].about]: 'Navigation.goTo(`about`)',
-                [App.consts[App.consts.current].rss]: 'Navigation.goTo(`rss`)',
-                [App.consts[App.consts.current].newsletter]: 'Navigation.goTo(`newsletter`)'
+                [App.consts[App.consts.current].blog]: [0, 'Navigation.goTo(`blog`)'],
+                [App.consts[App.consts.current].about]: [1, 'Navigation.goTo(`about`)'],
+                [App.consts[App.consts.current].rss]: [2, 'Navigation.goTo(`rss`)'],
+                [App.consts[App.consts.current].newsletter]: [3, 'Navigation.goTo(`newsletter`)'],
+                [App.theme.current === 'light' ? "🌙" : "☀️"]: [4, 'App.toggleTheme()']
             })
         )
     );

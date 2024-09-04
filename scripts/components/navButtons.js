@@ -21,12 +21,14 @@ const NavButtons = (content = []) => {
                 .entries(content)
                 .map(entry => `
                     <a
-                        onClick="${entry[1]}"
+                        onClick="${entry[1][1]}"
                         onMouseEnter="this.style.color = '${App.theme[App.theme.current].primaryAlternative}'"
                         onMouseLeave="this.style.color = '${App.theme[App.theme.current].primary}'"
                         style="${styleButton}">${entry[0]}
                     </a>
                 `)
+                .sort((a, b) => a[1][0] - b[1][0])
+                .reverse()
                 .join(" ")
             }
         </div>
