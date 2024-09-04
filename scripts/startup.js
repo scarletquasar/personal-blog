@@ -9,7 +9,8 @@ class App {
             rss: "RSS",
             newsletter: "Newsletter",
             searchPlaceholder: "Pesquise por algo...",
-            themeText: "Mudar para tema"
+            themeText: "Mudar para tema",
+            languageText: "Mudar para linguagem"
         },
         enus: {
             title: "Scarlet Victoria",
@@ -19,7 +20,8 @@ class App {
             rss: "RSS",
             newsletter: "Newsletter",
             searchPlaceholder: "Type and enter...",
-            themeText: "Change to theme"
+            themeText: "Change to theme",
+            languageText: "Change to language"
         }
     }
 
@@ -44,6 +46,10 @@ class App {
 
     static toggleTheme() {
         this.theme.current = this.theme.current === 'light' ? 'dark' : 'light';
+    }
+
+    static toggleLanguage() {
+        this.consts.current = this.consts.current === 'ptbr' ? 'enus' : 'ptbr';
     }
 }
 
@@ -80,6 +86,11 @@ function updatePageContent() {
                     4, 
                     'App.toggleTheme()',
                     `${App.consts[App.consts.current].themeText} ${App.theme.current === 'light' ? "dark" : "light"}`
+                ],
+                ["🌎"]: [
+                    5, 
+                    'App.toggleLanguage()',
+                    `${App.consts[App.consts.current].languageText} ${App.consts.current === 'ptbr' ? "english" : "brasileira"}`
                 ]
             })
         )
