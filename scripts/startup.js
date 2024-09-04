@@ -22,7 +22,9 @@ class App {
             searchPlaceholder: "Search for title, description, content or timestamps...",
             themeText: "Change to theme",
             languageText: "Change to language"
-        }
+        },
+        github: 'https://github.com/somecodingwitch',
+        bluesky: 'https://bsky.app/profile/scarletrose.xyz'
     }
 
     static theme = {
@@ -94,12 +96,12 @@ function updatePageContent() {
                 ],
                 ["💻"]: [
                     6,
-                    'window.open(`https://github.com/somecodingwitch`)',
+                    `window.open('${App.consts.github}')`,
                     'GitHub'
                 ],
                 ["🦋"]: [
                     7,
-                    'window.open(`https://bsky.app/profile/scarletrose.xyz`)',
+                    `window.open('${App.consts.bluesky}')`,
                     'BlueSky'
                 ],
             })
