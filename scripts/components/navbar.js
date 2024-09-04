@@ -11,7 +11,7 @@ const Navbar = (contentLeft = "", contentRight = "") => {
         right: 0;
 
         width: 100%;
-        border-bottom: 0.1em solid ${App.theme[App.theme.current].borders};
+        border-bottom: 1px solid ${App.theme[App.theme.current].borders};
         background-color: ${App.theme[App.theme.current].secondary};
     `.replace(/(\r\n|\n|\r)/gm,"");
 
