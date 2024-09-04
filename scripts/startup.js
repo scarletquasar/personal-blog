@@ -8,7 +8,7 @@ class App {
             about: "Sobre",
             rss: "RSS",
             newsletter: "Newsletter",
-            searchPlaceholder: "Pesquise por algo...",
+            searchPlaceholder: "Pesquise por título, descrição, conteúdo ou data...",
             themeText: "Mudar para tema",
             languageText: "Mudar para linguagem"
         },
@@ -19,7 +19,7 @@ class App {
             about: "About",
             rss: "RSS",
             newsletter: "Newsletter",
-            searchPlaceholder: "Type and enter...",
+            searchPlaceholder: "Search for title, description, content or timestamps...",
             themeText: "Change to theme",
             languageText: "Change to language"
         }
@@ -106,8 +106,18 @@ function updatePageContent() {
         )
     );
 
-    const currentTextContent = App.currentPageContent.toString();
-    const newTextContent = App.pageContent.toString();
+    App.pageContent.push('<div style="margin-top: 60px"></div>');
+    App.pageContent.push(
+        Viewer(`
+            ${App.consts[App.consts.current].subtitle}
+            <div style="margin-top: 10px">
+            <input style="font-family: 'GeistBold'; font-size: large; width: 500px; padding: 5px; border: 1px solid black; border-radius: 5px" type="text" placeholder="${App.consts[App.consts.current].searchPlaceholder}">
+            </div>
+        `)
+    );
+
+    const currentTextContent = App.currentPageContent.join('');
+    const newTextContent = App.pageContent.join('');
 
     if (currentTextContent != newTextContent) {
         App.currentPageContent = App.pageContent.map(x => x);
