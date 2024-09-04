@@ -91,7 +91,17 @@ function updatePageContent() {
                     5, 
                     'App.toggleLanguage()',
                     `${App.consts[App.consts.current].languageText} ${App.consts.current === 'ptbr' ? "english" : "brasileira"}`
-                ]
+                ],
+                ["💻"]: [
+                    6,
+                    'window.open(`https://github.com/somecodingwitch`)',
+                    'GitHub'
+                ],
+                ["🦋"]: [
+                    7,
+                    'window.open(`https://bsky.app/profile/scarletrose.xyz`)',
+                    'BlueSky'
+                ],
             })
         )
     );
