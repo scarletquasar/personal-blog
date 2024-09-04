@@ -8,7 +8,7 @@ const Title = (content = "") => {
     `.replace(/(\r\n|\n|\r)/gm,"");
 
     return `
-        <div style="${style}">
+        <div aria-label="${content}" style="${style}">
             ${content}
         </div>
     `

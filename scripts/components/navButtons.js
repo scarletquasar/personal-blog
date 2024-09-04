@@ -21,6 +21,7 @@ const NavButtons = (content = []) => {
                 .entries(content)
                 .map(entry => `
                     <a
+                        aria-label="${entry[1][2]}"
                         onClick="${entry[1][1]}"
                         onMouseEnter="this.style.color = '${App.theme[App.theme.current].primaryAlternative}'"
                         onMouseLeave="this.style.color = '${App.theme[App.theme.current].primary}'"
