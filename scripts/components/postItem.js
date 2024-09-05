@@ -2,8 +2,6 @@ const PostItem = (options) => {
     const style = `
         color: ${App.theme[App.theme.current].primary};
         background-color: ${App.theme[App.theme.current].secondary};
-
-        padding-top: 20px;
         width: 100%;
     `.replace(/(\r\n|\n|\r)/gm,"");
 

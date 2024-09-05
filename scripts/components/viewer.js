@@ -19,17 +19,13 @@ const Viewer = (contentBefore = "", contentAfter = []) => {
         padding-inline: 30px;
     `.replace(/(\r\n|\n|\r)/gm,"");
 
-    const styleAfter = `
-        overflow-y: scroll;
-    `.replace(/(\r\n|\n|\r)/gm,"");
-
     return `
         <main aria-label="" style="${style}">
             <section style="${styleContent}">
                 ${contentBefore}
             </section>
             <div style="${styleDivisory}"></div>
-            <section style="${styleAfter}">
+            <section>
                 ${contentAfter.join('')}
             </section>
         </main>
