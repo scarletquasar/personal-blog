@@ -1,4 +1,4 @@
-const Viewer = (contentBefore = "", contentAfter = "") => {
+const Viewer = (contentBefore = "", contentAfter = []) => {
     const style = `
         color: ${App.theme[App.theme.current].primary};
         background-color: ${App.theme[App.theme.current].secondary};
@@ -16,18 +16,22 @@ const Viewer = (contentBefore = "", contentAfter = "") => {
     `.replace(/(\r\n|\n|\r)/gm,"");
 
     const styleContent = `
-        padding-inline: 30px
+        padding-inline: 30px;
+    `.replace(/(\r\n|\n|\r)/gm,"");
+
+    const styleAfter = `
+        overflow-y: scroll;
     `.replace(/(\r\n|\n|\r)/gm,"");
 
     return `
-        <div aria-label="" style="${style}">
-            <div style="${styleContent}">
+        <main aria-label="" style="${style}">
+            <section style="${styleContent}">
                 ${contentBefore}
-            </div>
+            </section>
             <div style="${styleDivisory}"></div>
-            <div style="${styleContent}">
-                ${contentAfter}
-            </div>
-        </div>
+            <section style="${styleAfter}">
+                ${contentAfter.join('')}
+            </section>
+        </main>
     `
 }

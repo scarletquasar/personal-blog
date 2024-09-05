@@ -115,7 +115,21 @@ function updatePageContent() {
             <div style="margin-top: 10px">
             <input style="font-family: 'GeistBold'; font-size: large; width: 500px; padding: 5px; border: 1px solid black; border-radius: 5px" type="text" placeholder="${App.consts[App.consts.current].searchPlaceholder}">
             </div>
-        `)
+        `,
+        [
+            PostItem({ 
+                title: 'test ptbr',
+                language: 'ptbr',
+                date: new Date().toLocaleDateString(),
+                description: 'test'
+            }),
+            PostItem({ 
+                title: 'test',
+                language: 'enus',
+                date: new Date().toLocaleDateString(),
+                description: 'test'
+            })
+        ])
     );
 
     const currentTextContent = App.currentPageContent.join('');
