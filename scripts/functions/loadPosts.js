@@ -31,7 +31,10 @@ async function loadPosts() {
                     content: marked.parse(postContent)
                 }
         });
-        console.log(postItemData)
+
         App.loadedPosts.push(...postItemData);
+        App.loadedPosts.sort((a, b) => {
+            return new Date(b.date) - new Date(a.date);
+        });
     }
 }
