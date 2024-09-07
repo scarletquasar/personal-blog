@@ -10,7 +10,6 @@ async function loadPosts() {
             .replaceAll('\r', '\n')
             .split("@@@@@")
             .map(post => {
-                console.log(post)
                 const metadata = post
                     .trim()
                     .split('\n')
