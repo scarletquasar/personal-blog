@@ -1,4 +1,6 @@
 class App {
+    static focusInput = null;
+
     static consts = {
         current: 'ptbr',
         ptbr: {
@@ -44,6 +46,8 @@ class App {
     }
 
     static loadedPosts = [];
+    static searchResultPosts = [];
+    static isUserSearching = false;
 
     static currentPageContent = [];
     static pageContent = [];
@@ -59,7 +63,6 @@ class App {
 
 function updatePageContent() {
     document.title = App.consts[App.consts.current].title;
-
     App.pageContent.length = 0;
 
     App.pageContent.push(
@@ -116,7 +119,7 @@ function updatePageContent() {
             ${App.consts[App.consts.current].subtitle}
             ${ViewerSearch()}
         `,
-        App.loadedPosts.map(post => {
+        App[App.isUserSearching ? 'searchResultPosts' : 'loadedPosts'].map(post => {
             return PostItem({ 
                 title: post.title,
                 language: post.language,
