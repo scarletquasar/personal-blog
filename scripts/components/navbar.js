@@ -13,7 +13,7 @@ const Navbar = (contentLeft = "", contentRight = "") => {
         width: 100%;
         border-bottom: 1px solid ${App.theme[App.theme.current].borders};
         background-color: ${App.theme[App.theme.current].secondary};
-    `.replace(/(\r\n|\n|\r)/gm,"");
+    `;
 
     return `
         <nav style="${style}">

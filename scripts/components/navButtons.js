@@ -4,7 +4,7 @@ const NavButtons = (content = []) => {
         flex-direction: row-reverse;
         width: 45%;
         gap: 1%;
-    `.replace(/(\r\n|\n|\r)/gm,"");
+    `;
 
     const styleButton = `
         transition: 0.3s;

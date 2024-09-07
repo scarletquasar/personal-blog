@@ -43,6 +43,10 @@ class App {
         }
     }
 
+    static loadedPosts = {
+        
+    }
+
     static currentPageContent = [];
     static pageContent = [];
 
@@ -112,9 +116,7 @@ function updatePageContent() {
     App.pageContent.push(
         Viewer(`
             ${App.consts[App.consts.current].subtitle}
-            <div style="margin-top: 10px">
-            <input style="font-family: 'GeistBold'; font-size: large; width: 500px; padding: 5px; border: 1px solid black; border-radius: 5px" type="text" placeholder="${App.consts[App.consts.current].searchPlaceholder}">
-            </div>
+            ${ViewerSearch()}
         `,
         [
             PostItem({ 
