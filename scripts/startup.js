@@ -43,9 +43,7 @@ class App {
         }
     }
 
-    static loadedPosts = {
-        
-    }
+    static loadedPosts = [];
 
     static currentPageContent = [];
     static pageContent = [];
@@ -118,116 +116,14 @@ function updatePageContent() {
             ${App.consts[App.consts.current].subtitle}
             ${ViewerSearch()}
         `,
-        [
-            PostItem({ 
-                title: 'test ptbr',
-                language: 'ptbr',
-                date: new Date().toLocaleDateString(),
-                description: 'test'
-            }),
-            PostItem({ 
-                title: 'test',
-                language: 'enus',
-                date: new Date().toLocaleDateString(),
-                description: 'test'
-            }),
-            PostItem({ 
-                title: 'test ptbr',
-                language: 'ptbr',
-                date: new Date().toLocaleDateString(),
-                description: 'test'
-            }),
-            PostItem({ 
-                title: 'test',
-                language: 'enus',
-                date: new Date().toLocaleDateString(),
-                description: 'test'
-            }),
-            PostItem({ 
-                title: 'test ptbr',
-                language: 'ptbr',
-                date: new Date().toLocaleDateString(),
-                description: 'test'
-            }),
-            PostItem({ 
-                title: 'test',
-                language: 'enus',
-                date: new Date().toLocaleDateString(),
-                description: 'test'
-            }),
-            PostItem({ 
-                title: 'test ptbr',
-                language: 'ptbr',
-                date: new Date().toLocaleDateString(),
-                description: 'test'
-            }),
-            PostItem({ 
-                title: 'test',
-                language: 'enus',
-                date: new Date().toLocaleDateString(),
-                description: 'test'
-            }),
-            PostItem({ 
-                title: 'test ptbr',
-                language: 'ptbr',
-                date: new Date().toLocaleDateString(),
-                description: 'test'
-            }),
-            PostItem({ 
-                title: 'test',
-                language: 'enus',
-                date: new Date().toLocaleDateString(),
-                description: 'test'
-            }),
-            PostItem({ 
-                title: 'test ptbr',
-                language: 'ptbr',
-                date: new Date().toLocaleDateString(),
-                description: 'test'
-            }),
-            PostItem({ 
-                title: 'test',
-                language: 'enus',
-                date: new Date().toLocaleDateString(),
-                description: 'test'
-            }),
-            PostItem({ 
-                title: 'test ptbr',
-                language: 'ptbr',
-                date: new Date().toLocaleDateString(),
-                description: 'test'
-            }),
-            PostItem({ 
-                title: 'test',
-                language: 'enus',
-                date: new Date().toLocaleDateString(),
-                description: 'test'
-            }),
-            PostItem({ 
-                title: 'test ptbr',
-                language: 'ptbr',
-                date: new Date().toLocaleDateString(),
-                description: 'test'
-            }),
-            PostItem({ 
-                title: 'test',
-                language: 'enus',
-                date: new Date().toLocaleDateString(),
-                description: 'test'
-            }),
-            PostItem({ 
-                title: 'test ptbr',
-                language: 'ptbr',
-                date: new Date().toLocaleDateString(),
-                description: 'test'
-            }),
-            PostItem({ 
-                title: 'test',
-                language: 'enus',
-                date: new Date().toLocaleDateString(),
-                description: 'test'
+        App.loadedPosts.map(post => {
+            return PostItem({ 
+                title: post.title,
+                language: post.language,
+                date: post.date,
+                description: post.description
             })
-        ])
+        }))
     );
 
     const currentTextContent = App.currentPageContent.join('');
@@ -239,5 +135,6 @@ function updatePageContent() {
     }
 }
 
+loadPosts();
 updatePageContent();
 setInterval(updatePageContent, 10);
