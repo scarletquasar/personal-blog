@@ -2,7 +2,7 @@ const ViewerSearchState = {
     data: "",
     lastEvent: null,
     manage(event) {
-        if (event.code.startsWith('Key')) {
+        if (event.code.startsWith('Key') || event.code === "Backspace") {
             setTimeout(() => {
                 ViewerSearchState.data = event.target.value;
                 searchForPost(ViewerSearchState.data);

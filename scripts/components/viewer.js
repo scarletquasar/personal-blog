@@ -5,13 +5,13 @@ const Viewer = (contentBefore = "", contentAfter = []) => {
         font-family: 'GeistBold';
         font-size: x-large;
 
-        padding-top: 20px;
+        padding-top: 30px;
         width: 100%;
     `;
 
     const styleDivisory = `
         width: 100%;
-        margin-block: 15px;
+        margin-block: 20px;
         border-bottom: 1px solid ${App.theme[App.theme.current].borders};
     `;
 
