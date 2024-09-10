@@ -12,7 +12,7 @@ const Viewer = (contentBefore = "", contentAfter = []) => {
     const styleDivisory = `
         width: 100%;
         margin-block: 20px;
-        border-bottom: 1px solid ${App.theme[App.theme.current].borders};
+       
     `;
 
     const styleContent = `

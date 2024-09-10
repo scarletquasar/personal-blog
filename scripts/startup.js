@@ -33,7 +33,7 @@ class App {
         current: 'light',
         light: {
             primary: '#23272a',
-            secondary: '#ffffff',
+            secondary: '#fffcfc',
             borders: '#e8e9ed',
             primaryAlternative: '#5e6870',
             backgroundHover: '#f6f7f8'
@@ -41,7 +41,7 @@ class App {
         dark: {
             primary: '#e8e9ed',
             secondary: '#23272a',
-            borders: '#ffffff',
+            borders: '#fffcfc',
             primaryAlternative: '#5e6870',
             backgroundHover: '#404040'
         }
