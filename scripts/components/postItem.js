@@ -3,6 +3,8 @@ const PostItem = (options) => {
         color: ${App.theme[App.theme.current].primary};
         background-color: ${App.theme[App.theme.current].secondary};
         width: 100%;
+        cursor: pointer;
+        padding-block: 10px;
     `;
 
     const styleDivisory = `
@@ -12,7 +14,7 @@ const PostItem = (options) => {
     `;
 
     const styleContent = `
-        padding-inline: 30px
+        padding-inline: 30px;
     `;
 
     const styleTitle = `
@@ -33,13 +35,17 @@ const PostItem = (options) => {
     `;
 
     return options.language === App.consts.current ? `
-        <section aria-label="" style="${style}">
+        <section 
+            aria-label="" 
+            style="${style}"
+            onMouseEnter="this.style.background = '${App.theme[App.theme.current].backgroundHover}'"
+            onMouseLeave="this.style.background = 'transparent'">
             <section style="${styleContent}">
                 <p style="${styleTitle}">${options.title}</p>
                 <p style="${styleDate}">${options.date}</p>
                 <p style="${styleDescription}">${options.description}</p>
             </section>
-            <div style="${styleDivisory}"></div>
         </section>
+        <div style="${styleDivisory}"></div>
     ` : '';
 }

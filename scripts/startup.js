@@ -35,13 +35,15 @@ class App {
             primary: '#23272a',
             secondary: '#ffffff',
             borders: '#e8e9ed',
-            primaryAlternative: '#5e6870'
+            primaryAlternative: '#5e6870',
+            backgroundHover: '#f6f7f8'
         },
         dark: {
             primary: '#e8e9ed',
             secondary: '#23272a',
             borders: '#ffffff',
-            primaryAlternative: '#5e6870'
+            primaryAlternative: '#5e6870',
+            backgroundHover: '#404040'
         }
     }
 
