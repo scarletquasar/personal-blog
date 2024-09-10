@@ -118,13 +118,18 @@ function updatePageContent() {
     App.pageContent.push('<div style="margin-top: 60px"></div>');
     App.pageContent.push(
         App.currentPost 
-        ? "Test" 
+        ? "<br>" + App.loadedPosts.find(post => {
+            return post.id === App.currentPost[0] && post.language === App.currentPost[1]
+        })
+        .content
+        
         : Viewer(`
             ${App.consts[App.consts.current].subtitle}
             ${ViewerSearch()}
         `,
         App[App.isUserSearching ? 'searchResultPosts' : 'loadedPosts'].map(post => {
-            return PostItem({ 
+            return PostItem({
+                id: post.id,
                 title: post.title,
                 language: post.language,
                 date: post.date,

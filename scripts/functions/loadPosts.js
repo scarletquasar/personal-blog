@@ -19,7 +19,7 @@ async function loadPosts() {
                 const postContent = post
                     .replace('\n', '')
                     .split('\n')
-                    .slice(5)
+                    .slice(8)
                     .join('\n');
 
                 return {
