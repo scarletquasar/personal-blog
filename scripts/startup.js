@@ -1,5 +1,5 @@
 class App {
-    static focusInput = null;
+    static currentPost = null;
 
     static consts = {
         current: 'ptbr',
@@ -117,7 +117,9 @@ function updatePageContent() {
 
     App.pageContent.push('<div style="margin-top: 60px"></div>');
     App.pageContent.push(
-        Viewer(`
+        App.currentPost 
+        ? "Test" 
+        : Viewer(`
             ${App.consts[App.consts.current].subtitle}
             ${ViewerSearch()}
         `,

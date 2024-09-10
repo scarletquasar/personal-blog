@@ -14,7 +14,7 @@ async function loadPosts() {
                     .trim()
                     .split('\n')
                     .filter(item => item != '')
-                    .slice(0, 5);
+                    .slice(0, 6);
 
                 const postContent = post
                     .replace('\n', '')
@@ -23,10 +23,11 @@ async function loadPosts() {
                     .join('\n');
 
                 return {
-                    title: metadata[0],
-                    language: metadata[1],
-                    date: new Date(metadata[2]).toLocaleDateString(),
-                    description: metadata[3],
+                    id: metadata[0],
+                    title: metadata[1],
+                    language: metadata[2],
+                    date: new Date(metadata[3]).toLocaleDateString(),
+                    description: metadata[4],
                     content: marked.parse(postContent)
                 }
         });

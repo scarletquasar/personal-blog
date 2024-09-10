@@ -39,7 +39,8 @@ const PostItem = (options) => {
             aria-label="" 
             style="${style}"
             onMouseEnter="this.style.background = '${App.theme[App.theme.current].backgroundHover}'"
-            onMouseLeave="this.style.background = 'transparent'">
+            onMouseLeave="this.style.background = 'transparent'"
+            onclick="App.currentPost = ['${options.id}', '${options.language}']">
             <section style="${styleContent}">
                 <p style="${styleTitle}">${options.title}</p>
                 <p style="${styleDate}">${options.date}</p>
