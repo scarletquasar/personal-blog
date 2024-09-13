@@ -34,3 +34,7 @@ code {
 .hljs-keyword {
     color: rgb(231, 157, 231);
 }
+
+.hljs-built_in {
+    color: rgb(215, 145, 243);
+}

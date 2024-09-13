@@ -24,8 +24,8 @@ tactusque. Et sit in *est est* iamque, vincemur pando fuit vincula squalentia
 extimuit, nocet plura. Rumpunt ramis ego per: vigore talibus non per sororem
 diri vipereasque!
 
-```js
-function toCelsius(fahrenheit) {
+```ts
+function toCelsius(fahrenheit: number) {
   return (5/9) * (fahrenheit-32);
 }
 
@@ -71,8 +71,8 @@ tactusque. Et sit in *est est* iamque, vincemur pando fuit vincula squalentia
 extimuit, nocet plura. Rumpunt ramis ego per: vigore talibus non per sororem
 diri vipereasque!
 
-```js
-function toCelsius(fahrenheit) {
+```ts
+function toCelsius(fahrenheit: number) {
   return (5/9) * (fahrenheit-32);
 }
 
