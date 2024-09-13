@@ -143,11 +143,8 @@ function updatePageContent() {
     if (currentTextContent != newTextContent) {
         App.currentPageContent = App.pageContent.map(x => x);
         document.body.innerHTML = newTextContent;
+        hljs.highlightAll();
     }
-
-    Array.from(document.getElementsByTagName('pre')).forEach(element => {
-        element.className = 'ft-syntax-highlight';
-    });
 }
 
 loadPosts();

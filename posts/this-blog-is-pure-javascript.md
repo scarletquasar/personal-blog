@@ -24,22 +24,23 @@ tactusque. Et sit in *est est* iamque, vincemur pando fuit vincula squalentia
 extimuit, nocet plura. Rumpunt ramis ego per: vigore talibus non per sororem
 diri vipereasque!
 
-    blog_lossless_client += designArp;
-    if (managementBoxNative(tabletBotDrive, vista_artificial_bar, adware(
-            horizontal_opengl, template_tweak_bmp))) {
-        duplexOutput = archive.ddr(4, dbms_powerpoint);
-        host = 251211 + correction * ping;
-        windows_scareware.metaVirtualizationRouter = nas_wrap;
-    } else {
-        antivirus_terabyte_beta.scanner_traceroute_reimage(2);
-        start_lamp = driveClientOs + natNasOptical + card;
-    }
-    association.camera += file.url_streaming_quicktime(smishing +
-            minisite_sla_serial);
-    if (url) {
-        repositoryDvr.speakersOasis.systray_mirrored_opengl(fifo_system_model);
-        applicationByte.cutMemoryHub = 2 + ram;
-    }
+```js
+if (managementBoxNative(tabletBotDrive, vista_artificial_bar, adware(
+        horizontal_opengl, template_tweak_bmp))) {
+    duplexOutput = archive.ddr(4, dbms_powerpoint);
+    host = 251211 + correction * ping;
+    windows_scareware.metaVirtualizationRouter = nas_wrap;
+} else {
+    antivirus_terabyte_beta.scanner_traceroute_reimage(2);
+    start_lamp = driveClientOs + natNasOptical + card;
+}
+association.camera += file.url_streaming_quicktime(smishing +
+        minisite_sla_serial);
+if (url) {
+    repositoryDvr.speakersOasis.systray_mirrored_opengl(fifo_system_model);
+    applicationByte.cutMemoryHub = 2 + ram;
+}
+```
 
 ## Umbra caelo
 
@@ -81,22 +82,21 @@ extimuit, nocet plura. Rumpunt ramis ego per: vigore talibus non per sororem
 diri vipereasque!
 
 ```js
-    blog_lossless_client += designArp;
-    if (managementBoxNative(tabletBotDrive, vista_artificial_bar, adware(
-            horizontal_opengl, template_tweak_bmp))) {
-        duplexOutput = archive.ddr(4, dbms_powerpoint);
-        host = 251211 + correction * ping;
-        windows_scareware.metaVirtualizationRouter = nas_wrap;
-    } else {
-        antivirus_terabyte_beta.scanner_traceroute_reimage(2);
-        start_lamp = driveClientOs + natNasOptical + card;
-    }
-    association.camera += file.url_streaming_quicktime(smishing +
-            minisite_sla_serial);
-    if (url) {
-        repositoryDvr.speakersOasis.systray_mirrored_opengl(fifo_system_model);
-        applicationByte.cutMemoryHub = 2 + ram;
-    }
+if (managementBoxNative(tabletBotDrive, vista_artificial_bar, adware(
+        horizontal_opengl, template_tweak_bmp))) {
+    duplexOutput = archive.ddr(4, dbms_powerpoint);
+    host = 251211 + correction * ping;
+    windows_scareware.metaVirtualizationRouter = nas_wrap;
+} else {
+    antivirus_terabyte_beta.scanner_traceroute_reimage(2);
+    start_lamp = driveClientOs + natNasOptical + card;
+}
+association.camera += file.url_streaming_quicktime(smishing +
+        minisite_sla_serial);
+if (url) {
+    repositoryDvr.speakersOasis.systray_mirrored_opengl(fifo_system_model);
+    applicationByte.cutMemoryHub = 2 + ram;
+}
 ```
 
 ## Umbra caelo
