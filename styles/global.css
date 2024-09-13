@@ -12,3 +12,25 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+code {
+    background-color: #2b2b2b !important;
+    color: white !important;
+    font-family: 'JetBrainsMono';
+    font-size: medium;
+    padding-inline: 30px !important;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.hljs-title {
+    color: rgb(64, 134, 238);
+}
+
+.hljs-number {
+    color: rgb(102, 204, 102);
+}
+
+.hljs-keyword {
+    color: rgb(231, 157, 231);
+}

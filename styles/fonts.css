@@ -7,3 +7,8 @@
     font-family: Geist;
     src: url("../fonts/Geist-Regular.otf") format("opentype");
 }
+
+@font-face {
+    font-family: JetBrainsMono;
+    src: url("../fonts/JetBrainsMono-Regular.ttf");
+}
