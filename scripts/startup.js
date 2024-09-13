@@ -5,7 +5,7 @@ class App {
         current: 'ptbr',
         ptbr: {
             title: "Scarlet Victoria",
-            subtitle: "Blog técnico",
+            subtitle: "Postagens",
             blog: "Blog",
             about: "Sobre",
             rss: "RSS",
@@ -16,7 +16,7 @@ class App {
         },
         enus: {
             title: "Scarlet Victoria",
-            subtitle: "Technical blog",
+            subtitle: "Posts",
             blog: "Blog",
             about: "About",
             rss: "RSS",
@@ -118,11 +118,10 @@ function updatePageContent() {
     App.pageContent.push('<div style="margin-top: 60px"></div>');
     App.pageContent.push(
         App.currentPost 
-        ? "<br>" + App.loadedPosts.find(post => {
+        ? Viewer("<br>" + App.loadedPosts.find(post => {
             return post.id === App.currentPost[0] && post.language === App.currentPost[1]
         })
-        .content
-        
+        .content)
         : Viewer(`
             ${App.consts[App.consts.current].subtitle}
             ${ViewerSearch()}
@@ -145,6 +144,10 @@ function updatePageContent() {
         App.currentPageContent = App.pageContent.map(x => x);
         document.body.innerHTML = newTextContent;
     }
+
+    Array.from(document.getElementsByTagName('pre')).forEach(element => {
+        element.className = 'ft-syntax-highlight';
+    });
 }
 
 loadPosts();

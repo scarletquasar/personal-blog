@@ -80,6 +80,7 @@ tactusque. Et sit in *est est* iamque, vincemur pando fuit vincula squalentia
 extimuit, nocet plura. Rumpunt ramis ego per: vigore talibus non per sororem
 diri vipereasque!
 
+```js
     blog_lossless_client += designArp;
     if (managementBoxNative(tabletBotDrive, vista_artificial_bar, adware(
             horizontal_opengl, template_tweak_bmp))) {
@@ -96,6 +97,7 @@ diri vipereasque!
         repositoryDvr.speakersOasis.systray_mirrored_opengl(fifo_system_model);
         applicationByte.cutMemoryHub = 2 + ram;
     }
+```
 
 ## Umbra caelo
 
