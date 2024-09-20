@@ -3,8 +3,6 @@ const Title = (content = "") => {
         color: ${App.theme[App.theme.current].primary};
         font-family: 'GeistBold';
         font-size: x-large;
-
-        width: 45%;
     `;
 
     return `

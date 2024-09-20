@@ -1,7 +1,8 @@
 const Navbar = (contentLeft = "", contentRight = "") => {
     const style = `
         display: flex;
-        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         position: fixed;
         margin: 0;
         padding: 20px;
@@ -9,7 +10,6 @@ const Navbar = (contentLeft = "", contentRight = "") => {
         top: 0;
         left: 0;
         right: 0;
-
         width: 100%;
         border-bottom: 1px solid ${App.theme[App.theme.current].borders};
         background-color: ${App.theme[App.theme.current].secondary};
@@ -17,8 +17,8 @@ const Navbar = (contentLeft = "", contentRight = "") => {
 
     return `
         <nav style="${style}">
-            ${contentLeft}
-            ${contentRight}
+            <div>${contentLeft}</div>
+            <div>${contentRight}</div>
         </nav>
     `
 }
