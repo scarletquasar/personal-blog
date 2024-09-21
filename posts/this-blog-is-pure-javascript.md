@@ -4,7 +4,9 @@ esse-blog-e-feito-com-javascript-puro | Esse blog é feito com JavaScript puro |
 # Esse blog é feito com JavaScript puro
 
 <br>
-<i>"E sinceramente não é algo que valha a pena se você estiver pensando em fazer a mesma coisa - a menos que seja algo mais estático."</i>
+
+*"E sinceramente não é algo que valha a pena se você estiver pensando em fazer a mesma coisa - a menos que seja algo mais estático."*
+
 <br>
 
 Vamos começar pelo começo, a ideia de criar um blog "modularizado", "dinâmico" e moderno com JavaScript puro parece - e é - algo
