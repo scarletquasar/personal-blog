@@ -11,7 +11,9 @@ const Navbar = (contentLeft = "", contentRight = "") => {
         left: 0;
         right: 0;
         border-bottom: 1px solid ${App.theme[App.theme.current].borders};
-        background-color: ${App.theme[App.theme.current].secondary};
+        background-color: ${App.theme[App.theme.current].secondaryTransparent};
+
+        backdrop-filter: blur(10px);
     `;
 
     return `

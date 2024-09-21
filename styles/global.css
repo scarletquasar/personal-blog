@@ -56,10 +56,16 @@ h3 {
 
 section > p {
     font-size: medium;
+    font-family: 'Geist';
 }
 
 li {
     font-size: medium;
     margin-left: 20px;
+    font-family: 'Geist';
+    line-height: 25px;
 }
 
+a {
+    color: inherit;
+}

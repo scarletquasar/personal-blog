@@ -34,6 +34,7 @@ class App {
         light: {
             primary: '#23272a',
             secondary: '#fffcfc',
+            secondaryTransparent: 'rgba( 255, 255, 255, 0.6 )',
             borders: '#e8e9ed',
             primaryAlternative: '#5e6870',
             backgroundHover: '#f6f7f8'
@@ -41,6 +42,7 @@ class App {
         dark: {
             primary: '#e8e9ed',
             secondary: '#23272a',
+            secondaryTransparent: 'rgba( 0, 0, 0, 0.6 )',
             borders: '#fffcfc',
             primaryAlternative: '#5e6870',
             backgroundHover: '#404040'
