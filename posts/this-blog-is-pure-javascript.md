@@ -1,8 +1,12 @@
 @@@@@
 esse-blog-e-feito-com-javascript-puro
+
 Esse blog é feito com JavaScript puro
+
 ptbr
+
 2023-09-07T20:29:49.457Z
+
 Criando um blog modularizado, dinâmico e moderno com JavaScript puro, sem TS ou frameworks.
 
 # Esse blog é feito com JavaScript puro

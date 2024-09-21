@@ -21,8 +21,7 @@ async function loadPosts() {
                 console.log(metadata);
 
                 const postContent = post
-                    .trim()
-                    .replaceAll('\r', '\n');
+                    .trim();
 
                 return {
                     id: metadata[0],
