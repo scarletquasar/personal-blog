@@ -9,6 +9,7 @@ async function loadPosts() {
         const postItemData = postText
             .replaceAll('\r', '\n')
             .split("@@@@@")
+            .filter(post => post.trim() != "")
             .map(post => {
                 const metadata = post
                     .trim()
@@ -22,7 +23,6 @@ async function loadPosts() {
                     .slice(10)
                     .join('\n')
                     .trim();
-
                 console.log({
                     id: metadata[0],
                     title: metadata[1],
@@ -31,7 +31,6 @@ async function loadPosts() {
                     description: metadata[4],
                     content: marked.parse(postContent)
                 })
-
                 return {
                     id: metadata[0],
                     title: metadata[1],
