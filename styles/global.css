@@ -59,6 +59,10 @@ section > p {
     font-family: 'Geist';
 }
 
+i {
+    font-size: medium;
+}
+
 li {
     font-size: medium;
     margin-left: 20px;
