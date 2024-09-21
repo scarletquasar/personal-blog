@@ -65,6 +65,43 @@ class App {
     }
 }
 
+function loadUrlPost() {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('currentPost')) {
+        App.currentPost = [urlParams.get('currentPost'), App.consts.current];
+    }
+}
+
+function tryRecoverPost(post) {
+    const base = Viewer(`
+        ${App.consts[App.consts.current].subtitle}
+        ${ViewerSearch()}
+    `,
+    App[App.isUserSearching ? 'searchResultPosts' : 'loadedPosts'].map(post => {
+        return PostItem({
+            id: post.id,
+            title: post.title,
+            language: post.language,
+            date: post.date,
+            description: post.description
+        })
+    }));
+    
+    if (!post) {
+        return base;
+    }
+
+    const target = App.loadedPosts.find(post => {
+        return post.id === App.currentPost[0] && post.language === App.currentPost[1]
+    })?.content;
+
+    if (!target) {
+        return base;
+    }
+
+    return Viewer("<br>" + target);
+}
+
 function updatePageContent() {
     document.title = App.consts[App.consts.current].title;
     App.pageContent.length = 0;
@@ -118,26 +155,7 @@ function updatePageContent() {
     );
 
     App.pageContent.push('<div style="margin-top: 60px"></div>');
-    App.pageContent.push(
-        App.currentPost 
-        ? Viewer("<br>" + App.loadedPosts.find(post => {
-            return post.id === App.currentPost[0] && post.language === App.currentPost[1]
-        })
-        .content)
-        : Viewer(`
-            ${App.consts[App.consts.current].subtitle}
-            ${ViewerSearch()}
-        `,
-        App[App.isUserSearching ? 'searchResultPosts' : 'loadedPosts'].map(post => {
-            return PostItem({
-                id: post.id,
-                title: post.title,
-                language: post.language,
-                date: post.date,
-                description: post.description
-            })
-        }))
-    );
+    App.pageContent.push(tryRecoverPost(App.currentPost));
 
     const currentTextContent = App.currentPageContent.join('');
     const newTextContent = App.pageContent.join('');
@@ -147,9 +165,17 @@ function updatePageContent() {
         document.body.innerHTML = newTextContent;
         document.body.style.backgroundColor = App.theme[App.theme.current].secondary;
         hljs.highlightAll();
+
+        if (App.currentPost) {
+            history.pushState({},"",window.location.origin + "?currentPost=" + App.currentPost[0])
+            return;
+        }
+
+        history.pushState({},"",window.location.origin);
     }
 }
 
+loadUrlPost();
 loadPosts();
 updatePageContent();
 setInterval(updatePageContent, 10);
