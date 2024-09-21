@@ -55,6 +55,10 @@ h3 {
     font-size: large;
 }
 
+section > p {
+    font-size: medium;
+}
+
 li {
     font-size: medium;
     margin-left: 20px;
