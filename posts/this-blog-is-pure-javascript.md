@@ -1,5 +1,5 @@
 @@@@@
-esse-blog-e-feito-com-javascript-puro | Esse blog é feito com JavaScript puro | ptbr | 2024-09-21T18:14:57.044Z | Criando um blog modularizado dinâmico e moderno com JavaScript puro, sem TS ou frameworks.
+esse-blog-e-feito-com-javascript-puro | [Rascunho] Esse blog é feito com JavaScript puro | ptbr | 2024-09-21T18:14:57.044Z | Criando um blog modularizado dinâmico e moderno com JavaScript puro, sem TS ou frameworks.
 
 # [Rascunho] Esse blog é feito com JavaScript puro
 
@@ -134,7 +134,7 @@ o meu próprio leitor de eventos de input! (Só pra salvar estados, algo bem bá
 
 
 @@@@@
-this-blog-was-made-with-pure-javascript | This blog was made with pure JavaScript | enus | 2024-09-21T18:14:57.044Z | Creating a modular, modern and dynamic blog with pure JavaScript, without TS or frameworks.
+this-blog-was-made-with-pure-javascript | [Sketch] This blog was made with pure JavaScript | enus | 2024-09-21T18:14:57.044Z | Creating a modular, modern and dynamic blog with pure JavaScript, without TS or frameworks.
 
 # [Sketch] This blog was made with pure JavaScript
 
