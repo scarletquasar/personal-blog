@@ -30,7 +30,7 @@ class App {
     }
 
     static theme = {
-        current: localStorage.getItem('theme-current') ?? 'light',
+        current: localStorage.getItem('theme-current') ?? 'dark',
         light: {
             primary: '#23272a',
             secondary: '#fffcfc',
