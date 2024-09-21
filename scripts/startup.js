@@ -4,7 +4,7 @@ class App {
     static consts = {
         current: 'ptbr',
         ptbr: {
-            title: "Scarlet Victoria",
+            title: "Scarlet Rose",
             subtitle: "Postagens",
             blog: "Blog",
             about: "Sobre",
@@ -15,7 +15,7 @@ class App {
             languageText: "Mudar para linguagem"
         },
         enus: {
-            title: "Scarlet Victoria",
+            title: "Scarlet Rose",
             subtitle: "Posts",
             blog: "Blog",
             about: "About",
@@ -114,7 +114,7 @@ function updatePageContent() {
             })
         )
     );
-
+    
     App.pageContent.push('<div style="margin-top: 60px"></div>');
     App.pageContent.push(
         App.currentPost 

@@ -2,6 +2,7 @@ const NavButtons = (content = []) => {
     const style = `
         display: flex;
         flex-direction: row-reverse;
+        justify-content: center;
         gap: 1%;
     `;
 
@@ -10,7 +11,7 @@ const NavButtons = (content = []) => {
         color: ${App.theme[App.theme.current].primary};
         text-decoration: none;
         font-family: 'GeistBold';
-        font-size: large;
+        font-size: ${screen.width > 450 ? 'large' : 'small'};
         cursor: pointer;
     `;
 
