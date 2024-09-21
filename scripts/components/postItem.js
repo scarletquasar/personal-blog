@@ -1,4 +1,7 @@
 const PostItem = (options) => {
+    if (options.id == 'about-me') {
+        return '';
+    }
     const style = `
         color: ${App.theme[App.theme.current].primary};
         background-color: ${App.theme[App.theme.current].secondary};

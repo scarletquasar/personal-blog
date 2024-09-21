@@ -122,31 +122,26 @@ function updatePageContent() {
                 ],
                 [App.consts[App.consts.current].rss]: [
                     2, 
-                    'navigate(`rss`)',
+                    'window.open(`./rss.xml`)',
                     App.consts[App.consts.current].rss
                 ],
-                [App.consts[App.consts.current].newsletter]: [
-                    3, 
-                    'navigate(`newsletter`)',
-                    App.consts[App.consts.current].newsletter
-                ],
                 [App.theme.current === 'light' ? "🌙" : "☀️"]: [
-                    4, 
+                    3, 
                     'App.toggleTheme()',
                     `${App.consts[App.consts.current].themeText} ${App.theme.current === 'light' ? "dark" : "light"}`
                 ],
                 ["🌎"]: [
-                    5, 
+                    4, 
                     'App.toggleLanguage()',
                     `${App.consts[App.consts.current].languageText} ${App.consts.current === 'ptbr' ? "english" : "brasileira"}`
                 ],
                 ["💻"]: [
-                    6,
+                    5,
                     `window.open('${App.consts.github}')`,
                     'GitHub'
                 ],
                 ["🦋"]: [
-                    7,
+                    6,
                     `window.open('${App.consts.bluesky}')`,
                     'BlueSky'
                 ],
