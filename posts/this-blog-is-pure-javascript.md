@@ -40,6 +40,8 @@ Algum texto.
             - Item 6
 
 ```ts
+
+
 function toCelsius(fahrenheit: number) {
   return (5/9) * (fahrenheit-32);
 }
