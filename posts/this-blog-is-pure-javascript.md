@@ -118,9 +118,17 @@ atualizado automaticamente. Tudo perfeito, correto? Agora tente colocar qualquer
 aplicação explodir (não me responsabilizo por danos!). Falaremos disso mais à frente e o que podemos fazer para contornar esse
 problema (tem tudo a ver com eventos e propagação! um ótimo exercício para JavaScript básico).
 
+<br>
+
 <h3 id="sobre-propagação-de-eventos">Sobre propagação de eventos</h3>
 
 <br>
+
+Eventos são seres traiçoeiros que vivem no JavaScript. Quando comecei a montar meu blog a partir desse sistema emendado de
+renderização, logo percebi que havia um problema: não dava para interagir com inputs - eles iriam automaticamente dar
+trigger no verificador de diferença de DOM e atualizar a tela, sempre que eu apertasse um botão. Então, ao invés de destruir
+tudo que eu já fiz e fazer algo decente com React ou Vue, comecei a investigar os eventos do JavaScript e decidi implementar
+o meu próprio leitor de eventos de input! (Só pra salvar estados, algo bem básico feito em cima dos eventos padrão do JavaScript).
 
 
 @@@@@
