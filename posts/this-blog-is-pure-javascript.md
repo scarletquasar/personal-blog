@@ -1,13 +1,5 @@
 @@@@@
-esse-blog-e-feito-com-javascript-puro
-
-Esse blog é feito com JavaScript puro
-
-ptbr
-
-2023-09-07T20:29:49.457Z
-
-Criando um blog modularizado, dinâmico e moderno com JavaScript puro, sem TS ou frameworks.
+esse-blog-e-feito-com-javascript-puro | Esse blog é feito com JavaScript puro | ptbr | 2023-09-07T20:29:49.457Z | Criando um blog modularizado dinâmico e moderno com JavaScript puro, sem TS ou frameworks.
 
 # Esse blog é feito com JavaScript puro
 
@@ -32,11 +24,7 @@ let value = toCelsius(77);
 <a href="test">a</a>
 
 @@@@@
-this-blog-was-made-with-pure-javascript
-This blog was made with pure JavaScript
-enus
-2023-09-07T20:29:49.457Z
-Creating a modular, modern and dynamic blog with pure JavaScript, without TS or frameworks.
+esse-blog-e-feito-com-javascript-puro | Esse blog é feito com JavaScript puro | enus | 2023-09-07T20:29:49.457Z | Criando um blog modularizado dinâmico e moderno com JavaScript puro, sem TS ou frameworks.
 
 # This blog was made with pure JavaScript
 

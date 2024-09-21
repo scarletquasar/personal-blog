@@ -13,15 +13,15 @@ async function loadPosts() {
             .map(post => {
                 const metadata = post
                     .trim()
-                    .replaceAll('\r', '')
-                    .split('\n')
-                    .filter(item => item != '')
-                    .slice(0, 6);
-
-                console.log(metadata);
+                    .split('\n')[0]
+                    .split('|')
+                    .map(item => item.trim());
 
                 const postContent = post
-                    .trim();
+                    .trim()
+                    .split('\n')
+                    .slice(1)
+                    .join('\n');
 
                 return {
                     id: metadata[0],
