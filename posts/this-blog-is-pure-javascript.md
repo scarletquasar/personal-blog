@@ -67,6 +67,12 @@ um array aleatório sem muita preparação, podemos chamar de VirtualDOM).
 
 <br>
 
+<h3 id="renderização-condicional">Renderizaçao condicional</h3>
+
+<br>
+
+Nesse exemplo, faço uma funcionalidade que me permite emular renderização condicional na minha aplicação:
+
 ```js
 
 class App {
@@ -112,6 +118,10 @@ Com tudo configurado, basta adicionar novos valores à variável *pageContent* e
 atualizado automaticamente. Tudo perfeito, correto? Agora tente colocar qualquer input de texto, estado ou número e veja a sua
 aplicação explodir (não me responsabilizo por danos!). Falaremos disso mais à frente e o que podemos fazer para contornar esse
 problema (tem tudo a ver com eventos e propagação! um ótimo exercício para JavaScript básico).
+
+<h3 id="sobre-propagação-de-eventos">Sobre propagação de eventos</h3>
+
+<br>
 
 
 @@@@@
