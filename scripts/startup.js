@@ -30,7 +30,7 @@ class App {
     }
 
     static theme = {
-        current: 'light',
+        current: localStorage.getItem('theme-current') ?? 'light',
         light: {
             primary: '#23272a',
             secondary: '#fffcfc',
@@ -56,6 +56,7 @@ class App {
 
     static toggleTheme() {
         this.theme.current = this.theme.current === 'light' ? 'dark' : 'light';
+        localStorage.setItem('theme-current', this.theme.current);
     }
 
     static toggleLanguage() {
@@ -143,6 +144,7 @@ function updatePageContent() {
     if (currentTextContent != newTextContent) {
         App.currentPageContent = App.pageContent.map(x => x);
         document.body.innerHTML = newTextContent;
+        document.body.style.backgroundColor = App.theme[App.theme.current].secondary;
         hljs.highlightAll();
     }
 }
