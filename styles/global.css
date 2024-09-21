@@ -14,11 +14,14 @@ body {
 }
 
 code {
+    height: 100%;
     background-color: #2b2b2b !important;
     color: white !important;
     font-family: 'JetBrainsMono';
     font-size: medium;
-    padding-inline: 30px !important;
+    padding: 0px !important;
+    padding-inline: 20px !important;
+    padding-bottom: 20px !important;
     border-radius: 10px;
     border: 1px solid black;
 }
@@ -38,3 +41,21 @@ code {
 .hljs-built_in {
     color: rgb(215, 145, 243);
 }
+
+h1 {
+    font-size: xx-large;
+}
+
+h2 {
+    font-size: x-large;
+}
+
+h3 {
+    font-size: large;
+}
+
+li {
+    font-size: medium;
+    margin-left: 20px;
+}
+
