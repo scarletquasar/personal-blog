@@ -11,19 +11,21 @@ async function loadPosts() {
             .split("@@@@@")
             .filter(post => post.trim() != "")
             .map(post => {
+                console.log(post.replaceAll('\r', '\n').split('\n'))
                 const metadata = post
                     .trim()
+                    .replaceAll('\r', '\n')
                     .split('\n')
                     .filter(item => item != '')
                     .slice(0, 6);
 
                 const postContent = post
+                    .trim()
                     .replace('\n', '')
                     .replaceAll('\r', '\n')
                     .split('\n')
                     .slice(10)
-                    .join('\n')
-                    .trim();
+                    .join('\n');
 
                 return {
                     id: metadata[0],
