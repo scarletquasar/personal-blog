@@ -20,8 +20,8 @@ const ViewerSearch = () => {
     const style = `
         font-family: 'GeistBold'; 
         font-size: large; 
-        width: 500px; 
-        padding: 5px; 
+        width: ${screen.width > 450 ? '500px' : '300px'};
+        padding: ${screen.width > 450 ? '5px' : '10px'}; 
         border: 1px solid black; 
         border-radius: 5px
     `;

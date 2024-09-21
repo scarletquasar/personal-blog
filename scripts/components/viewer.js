@@ -5,7 +5,7 @@ const Viewer = (contentBefore = "", contentAfter = []) => {
         font-family: 'GeistBold';
         font-size: x-large;
 
-        padding-top: 30px;
+        padding-top: ${screen.width > 450 ? '60px' : '40px'};
         width: 100%;
     `;
 
