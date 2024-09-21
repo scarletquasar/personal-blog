@@ -1,4 +1,4 @@
-a132220d-e180-4c62-93b0-acc7616cd629
+esse-blog-e-feito-com-javascript-puro
 Esse blog é feito com JavaScript puro
 ptbr
 2023-09-07T20:29:49.457Z
@@ -27,7 +27,7 @@ let value = toCelsius(77);
 <a href="test">a</a>
 
 @@@@@
-a132220d-e180-4c62-93b0-acc7616cd629
+this-blog-was-made-with-pure-javascript
 This blog was made with pure JavaScript
 enus
 2023-09-07T20:29:49.457Z
