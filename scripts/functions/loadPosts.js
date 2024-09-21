@@ -1,9 +1,12 @@
 async function loadPosts() {
-    const index = await fetch('../../posts/index.json')
+    const index = await fetch('/posts/index.json')
         .then(data => data.json());
 
+    console.log(index);
+
     for(const fileName of index) {
-        const postText = await fetch(`../../posts/${fileName}.md`)
+        console.log(fileName)
+        const postText = await fetch(`/posts/${fileName}.md`)
             .then(data => data.text());
 
         const postItemData = postText
