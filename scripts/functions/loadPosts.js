@@ -20,17 +20,10 @@ async function loadPosts() {
                 const postContent = post
                     .replace('\n', '')
                     .split('\n')
-                    .slice(10)
+                    .slice(9)
                     .join('\n')
                     .trim();
-                console.log({
-                    id: metadata[0],
-                    title: metadata[1],
-                    language: metadata[2],
-                    date: new Date(metadata[3]).toLocaleDateString(),
-                    description: metadata[4],
-                    content: marked.parse(postContent)
-                })
+
                 return {
                     id: metadata[0],
                     title: metadata[1],
