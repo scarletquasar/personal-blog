@@ -2,10 +2,7 @@ async function loadPosts() {
     const index = await fetch('/posts/index.json')
         .then(data => data.json());
 
-    console.log(index);
-
     for(const fileName of index) {
-        console.log(fileName)
         const postText = await fetch(`/posts/${fileName}.md`)
             .then(data => data.text());
 
@@ -25,6 +22,15 @@ async function loadPosts() {
                     .slice(10)
                     .join('\n')
                     .trim();
+
+                console.log({
+                    id: metadata[0],
+                    title: metadata[1],
+                    language: metadata[2],
+                    date: new Date(metadata[3]).toLocaleDateString(),
+                    description: metadata[4],
+                    content: marked.parse(postContent)
+                })
 
                 return {
                     id: metadata[0],
