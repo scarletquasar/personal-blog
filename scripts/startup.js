@@ -99,7 +99,7 @@ function tryRecoverPost(post) {
         return base;
     }
 
-    return Viewer("<br>" + target);
+    return Viewer(target);
 }
 
 function updatePageContent() {
@@ -117,7 +117,7 @@ function updatePageContent() {
                 ],
                 [App.consts[App.consts.current].about]: [
                     1, 
-                    'navigate(`about`)',
+                    'App.currentPost = [`about-me`, App.consts.current]',
                     App.consts[App.consts.current].about
                 ],
                 [App.consts[App.consts.current].rss]: [

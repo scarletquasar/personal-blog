@@ -19,8 +19,9 @@ async function loadPosts() {
                 const postContent = post
                     .replace('\n', '')
                     .split('\n')
-                    .slice(8)
-                    .join('\n');
+                    .slice(10)
+                    .join('\n')
+                    .trim();
 
                 return {
                     id: metadata[0],
@@ -31,7 +32,6 @@ async function loadPosts() {
                     content: marked.parse(postContent)
                 }
         });
-
         App.loadedPosts.push(...postItemData);
         App.loadedPosts.sort((a, b) => {
             return new Date(b.date) - new Date(a.date);
