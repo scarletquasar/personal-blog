@@ -19,8 +19,9 @@ async function loadPosts() {
 
                 const postContent = post
                     .replace('\n', '')
+                    .replaceAll('\r', '\n')
                     .split('\n')
-                    .slice(9)
+                    .slice(10)
                     .join('\n')
                     .trim();
 
