@@ -2,7 +2,7 @@ class App {
     static currentPost = null;
 
     static consts = {
-        current: 'ptbr',
+        current: localStorage.getItem('language-current') ?? 'ptbr',
         ptbr: {
             title: "Scarlet Rose",
             subtitle: "Postagens",
@@ -61,6 +61,7 @@ class App {
 
     static toggleLanguage() {
         this.consts.current = this.consts.current === 'ptbr' ? 'enus' : 'ptbr';
+        localStorage.setItem('language-current', this.consts.current);
     }
 }
 
