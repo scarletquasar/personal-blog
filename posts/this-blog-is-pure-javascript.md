@@ -74,7 +74,6 @@ um array aleatório sem muita preparação, podemos chamar de VirtualDOM).
 Nesse exemplo, faço uma funcionalidade que me permite emular renderização condicional na minha aplicação:
 
 ```js
-
 class App {
     static currentPageContent = [];
     static pageContent = [];
