@@ -73,22 +73,22 @@ function updatePageContent() {
             NavButtons({
                 [App.consts[App.consts.current].blog]: [
                     0, 
-                    'Navigation.goTo(`blog`)', 
+                    'App.currentPost = null', 
                     App.consts[App.consts.current].blog
                 ],
                 [App.consts[App.consts.current].about]: [
                     1, 
-                    'Navigation.goTo(`about`)',
+                    'navigate(`about`)',
                     App.consts[App.consts.current].about
                 ],
                 [App.consts[App.consts.current].rss]: [
                     2, 
-                    'Navigation.goTo(`rss`)',
+                    'navigate(`rss`)',
                     App.consts[App.consts.current].rss
                 ],
                 [App.consts[App.consts.current].newsletter]: [
                     3, 
-                    'Navigation.goTo(`newsletter`)',
+                    'navigate(`newsletter`)',
                     App.consts[App.consts.current].newsletter
                 ],
                 [App.theme.current === 'light' ? "🌙" : "☀️"]: [
@@ -114,7 +114,7 @@ function updatePageContent() {
             })
         )
     );
-    
+
     App.pageContent.push('<div style="margin-top: 60px"></div>');
     App.pageContent.push(
         App.currentPost 
