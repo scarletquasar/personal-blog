@@ -95,13 +95,16 @@ function tryRecoverPost(post) {
 
     const target = App.loadedPosts.find(post => {
         return post.id === App.currentPost[0] && post.language === App.currentPost[1]
-    })?.content;
+    });
 
     if (!target) {
         return base;
     }
 
-    return Viewer(target);
+    const result = Viewer(target.content);
+
+    console.log(result)
+    return result;
 }
 
 function updatePageContent() {
@@ -164,6 +167,37 @@ function updatePageContent() {
         hljs.highlightAll();
 
         if (App.currentPost) {
+            const commentsDiv = document.createElement('div');
+            commentsDiv.innerHTML = `
+            <script id="comments" src="https://giscus.app/client.js"
+                    data-repo="somecodingwitch/personal-blog"
+                    data-repo-id="R_kgDOKaHijQ"
+                    data-category="General"
+                    data-category-id="DIC_kwDOKaHijc4CiskD"
+                    data-mapping="title"
+                    data-strict="0"
+                    data-reactions-enabled="1"
+                    data-emit-metadata="0"
+                    data-input-position="bottom"
+                    data-theme="dark"
+                    data-lang="en"
+                    crossorigin="anonymous"
+                    async>
+            </script>
+            `;
+            document.body.appendChild(commentsDiv)
+
+            executeScriptsInNode(commentsDiv);
+
+            function executeScriptsInNode(node) {
+              const scripts = node.querySelectorAll('script');
+              scripts.forEach(script => {
+                const scriptNode = document.createElement('script');
+                scriptNode.text = script.innerHTML;
+                script.parentNode.replaceChild(scriptNode, script);
+              })
+            }
+
             history.pushState({},"",window.location.origin + "?currentPost=" + App.currentPost[0])
             return;
         }
