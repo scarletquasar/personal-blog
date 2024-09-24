@@ -167,8 +167,7 @@ function updatePageContent() {
         hljs.highlightAll();
 
         if (App.currentPost) {
-            const commentsDiv = document.createElement('div');
-            commentsDiv.innerHTML = `
+            document.body.innerHTML = document.body.innerHTML + `
             <script id="comments" src="https://giscus.app/client.js"
                     data-repo="somecodingwitch/personal-blog"
                     data-repo-id="R_kgDOKaHijQ"
@@ -184,20 +183,7 @@ function updatePageContent() {
                     crossorigin="anonymous"
                     async>
             </script>
-            `;
-            document.body.appendChild(commentsDiv)
-
-            executeScriptsInNode(commentsDiv);
-
-            function executeScriptsInNode(node) {
-              const scripts = node.querySelectorAll('script');
-              scripts.forEach(script => {
-                const scriptNode = document.createElement('script');
-                scriptNode.text = script.innerHTML;
-                script.parentNode.replaceChild(scriptNode, script);
-              })
-            }
-
+            `
             history.pushState({},"",window.location.origin + "?currentPost=" + App.currentPost[0])
             return;
         }
