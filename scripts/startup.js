@@ -25,7 +25,7 @@ class App {
             themeText: "Change to theme",
             languageText: "Change to language"
         },
-        github: 'https://github.com/somecodingwitch',
+        github: 'https://github.com/scarletquasar',
         bluesky: 'https://bsky.app/profile/scarletrose.xyz'
     }
 
