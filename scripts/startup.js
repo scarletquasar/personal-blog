@@ -162,32 +162,11 @@ function updatePageContent() {
 
     if (currentTextContent != newTextContent) {
         App.currentPageContent = App.pageContent.map(x => x);
+
         document.body.innerHTML = newTextContent;
         document.body.style.backgroundColor = App.theme[App.theme.current].secondary;
+        
         hljs.highlightAll();
-
-        if (App.currentPost) {
-            document.body.innerHTML = document.body.innerHTML + `
-            <script id="comments" src="https://giscus.app/client.js"
-                    data-repo="somecodingwitch/personal-blog"
-                    data-repo-id="R_kgDOKaHijQ"
-                    data-category="General"
-                    data-category-id="DIC_kwDOKaHijc4CiskD"
-                    data-mapping="title"
-                    data-strict="0"
-                    data-reactions-enabled="1"
-                    data-emit-metadata="0"
-                    data-input-position="bottom"
-                    data-theme="dark"
-                    data-lang="en"
-                    crossorigin="anonymous"
-                    async>
-            </script>
-            `
-            history.pushState({},"",window.location.origin + "?currentPost=" + App.currentPost[0])
-            return;
-        }
-
         history.pushState({},"",window.location.origin);
     }
 }
