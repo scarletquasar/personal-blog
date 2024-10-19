@@ -183,7 +183,7 @@ async function loadPosts() {
 ```
 <br>
 
-Essa função altera diretamente a variável global `App.loadedPosts`, o que faz com que novas renderizações incluam as postagens na lista visual fazendo com que haja uma alteração no código do DOM, o que faz com que o foco no input textual e o próprio valor sejam perdidos. Para evitar esse problema (ao menos na maioria dos browsers e talvez em alguns navegarores mobile) foi criada uma classe de estado, que será responsável por identificar os eventos de texto e orquestrar as alterações para fazer com que o texto seja devidamente salvo e o foco continue lá:
+Essa função altera diretamente a variável global **App.loadedPosts**, o que faz com que novas renderizações incluam as postagens na lista visual fazendo com que haja uma alteração no código do DOM, o que faz com que o foco no input textual e o próprio valor sejam perdidos. Para evitar esse problema (ao menos na maioria dos browsers e talvez em alguns navegarores mobile) foi criada uma classe de estado, que será responsável por identificar os eventos de texto e orquestrar as alterações para fazer com que o texto seja devidamente salvo e o foco continue lá:
 
 <br>
 
