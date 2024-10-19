@@ -150,7 +150,7 @@ async function loadPosts() {
 
         const postItemData = postText
             .replaceAll('\r', '\n')
-            .split("﹫﹫﹫﹫")
+            .split("﹫﹫ ﹫﹫")
             .filter(post => post.trim() != "")
             .map(post => {
                 const metadata = post
