@@ -132,6 +132,57 @@ trigger no verificador de diferença de DOM e atualizar a tela, sempre que eu ap
 tudo que eu já fiz e fazer algo decente com React ou Vue, comecei a investigar os eventos do JavaScript e decidi implementar
 o meu próprio leitor de eventos de input! (Só pra salvar estados, algo bem básico feito em cima dos eventos padrão do JavaScript).
 
+<br>
+
+Para começar, declarei o input - que por si só não causava uma renderização extra toda vez que era alterado, mas eu gostaria que a cada
+caractere inserido, a função **loadPosts** que foi declarada da seguinte maneira (não vamos focar em código limpo nessa situação):
+
+<br>
+
+```js
+async function loadPosts() {
+    const index = await fetch('/posts/index.json')
+        .then(data => data.json());
+
+    for(const fileName of index) {
+        const postText = await fetch(`/posts/${fileName}.md`)
+            .then(data => data.text());
+
+        const postItemData = postText
+            .replaceAll('\r', '\n')
+            .split("@@@@@")
+            .filter(post => post.trim() != "")
+            .map(post => {
+                const metadata = post
+                    .trim()
+                    .split('\n')[0]
+                    .split('|')
+                    .map(item => item.trim());
+
+                const postContent = post
+                    .trim()
+                    .split('\n')
+                    .slice(1)
+                    .join('\n');
+
+                return {
+                    id: metadata[0],
+                    title: metadata[1],
+                    language: metadata[2],
+                    date: new Date(metadata[3]).toLocaleDateString(),
+                    description: metadata[4],
+                    content: marked.parse(postContent)
+                }
+        });
+        App.loadedPosts.push(...postItemData);
+        App.loadedPosts.sort((a, b) => {
+            return new Date(b.date) - new Date(a.date);
+        });
+    }
+}
+```
+
+
 
 @@@@@
 this-blog-was-made-with-pure-javascript | [Sketch] This blog was made with pure JavaScript | enus | 2024-09-21T18:14:57.044Z | Creating a modular, modern and dynamic blog with pure JavaScript, without TS or frameworks.
