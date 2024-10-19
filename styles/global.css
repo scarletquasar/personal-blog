@@ -47,11 +47,11 @@ code {
 }
 
 .hljs-attr {
-    color: rgb(231, 157, 231);
+    color: rgb(231, 157, 231) !important;
 }
 
 .hljs-tag {
-    color: white;
+    color: white !important;
 }
 
 .hljs-string {
