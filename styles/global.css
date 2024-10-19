@@ -42,6 +42,22 @@ code {
     color: rgb(215, 145, 243);
 }
 
+.hljs-name {
+    color: rgb(102, 204, 102);
+}
+
+.hljs-attr {
+    color: rgb(231, 157, 231);
+}
+
+.hljs-tag {
+    color: white;
+}
+
+.hljs-string {
+    color: rgb(64, 134, 238);
+}
+
 h1 {
     font-size: xx-large;
 }
