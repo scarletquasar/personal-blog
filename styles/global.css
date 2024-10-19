@@ -50,7 +50,7 @@ code {
     color: rgb(231, 157, 231) !important;
 }
 
-.hljs-tag {
+.hljs-tag, .hljs-name {
     color: white !important;
 }
 
