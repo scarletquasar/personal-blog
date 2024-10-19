@@ -181,7 +181,54 @@ async function loadPosts() {
     }
 }
 ```
+<br>
 
+Essa função altera diretamente a variável global `App.loadedPosts`, o que faz com que novas renderizações incluam as postagens na lista visual fazendo com que haja uma alteração no código do DOM, o que faz com que o foco no input textual e o próprio valor sejam perdidos. Para evitar esse problema (ao menos na maioria dos browsers e talvez em alguns navegarores mobile) foi criada uma classe de estado, que será responsável por identificar os eventos de texto e orquestrar as alterações para fazer com que o texto seja devidamente salvo e o foco continue lá:
+
+<br>
+
+```js
+const ViewerSearchState = {
+    data: "",
+    lastEvent: null,
+    manage(event) {
+        if (event.code.startsWith('Key') || event.code === "Backspace") {
+            setTimeout(() => {
+                ViewerSearchState.data = event.target.value;
+                searchForPost(ViewerSearchState.data);
+            }, 10);
+            setTimeout(() => {
+                const target = document.getElementById(event.target.id);
+                target.focus();
+                target.setSelectionRange(target.value.length, target.value.length);
+            }, 20)
+        }
+    }
+}
+```
+
+<br>
+
+Nesse código é possível perceber que a funcionalidade manage cuida das execuções do input e são utilizados dois timeouts para fazer a obtenção dos elementos e suas devidas alterações/operações - os timeouts são necessários para "esperar" que os eventos do input sejam devidamente propagados, caso contrário poderão ocorrer bugs com valores vazios ou incompletos. Para chamar esse código, o seguinte HTML foi implementado no componente com **onkeydown**:
+
+<br>
+
+```html
+<div style="margin-top: 10px">
+    <input
+        id="search"
+        style="${style}" 
+        type="text"
+        value="${ViewerSearchState.data}"
+        placeholder="${App.consts[App.consts.current].searchPlaceholder}"
+        onkeydown="ViewerSearchState.manage(event, this)">
+</div>
+```
+
+<br>
+
+O resultado final foi um input text funcional que atende (na maioria dos casos) às necessidades de pesquisa do blog. Ainda existem alguns pontos a serem polidos principalmente no nível de compatibilidade entre os navegadores existentes e na efetividade da pesquisa, que está
+ignorando alguns termos válidos.
 
 
 @@@@@
