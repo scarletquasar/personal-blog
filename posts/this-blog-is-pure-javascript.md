@@ -230,6 +230,37 @@ Nesse código é possível perceber que a funcionalidade manage cuida das execu�
 O resultado final foi um input text funcional que atende (na maioria dos casos) às necessidades de pesquisa do blog. Ainda existem alguns pontos a serem polidos principalmente no nível de compatibilidade entre os navegadores existentes e na efetividade da pesquisa, que está
 ignorando alguns termos válidos.
 
+<h3 id="temas-e-cores">Temas e cores</h3>
+
+Criei um elemento de tema para dinamicamente alterar a tela com um clique de botão, como geralmente faço em outras bibliotecas e frameworks modernos, como React e Angular. Usando o localStorage, a aplicação consegue lembrar o estado do tema, para fazer essa sincronização eu utilizo apenas uma verificação de já existência dessa variável. Por enquanto, tenho dois temas, light e dark, com suas respectivas cores e configurações. O sistema de temas depende de alterar algumas propriedades do **document.body** e usar o **localStorage** para armazenar a preferência do usuário. 
+
+<br>
+
+Assim como qualquer outra coisa nessa aplicação, eu também utilizo uma variável no meu estado global para definir o tema atual, com o único diferencial de que eu faço essa sincronização extra simples para que eu possa persistir o dado e fazer com que ele fique guardado diretamente com a informação de domínio no navegador. Exemplo de código:
+
+<br>
+
+```js
+    static theme = {
+    current: localStorage.getItem('theme-current') ?? 'dark',
+    light: {
+        primary: '#23272a',
+        secondary: '#fffcfc',
+        secondaryTransparent: 'rgba( 255, 255, 255, 0.6 )',
+        borders: '#e8e9ed',
+        primaryAlternative: '#5e6870',
+        backgroundHover: '#f6f7f8'
+    },
+    dark: {
+        primary: '#e8e9ed',
+        secondary: '#23272a',
+        secondaryTransparent: 'rgba( 0, 0, 0, 0.6 )',
+        borders: '#fffcfc',
+        primaryAlternative: '#5e6870',
+        backgroundHover: '#404040'
+    }
+}
+```
 
 @@@@@
 this-blog-was-made-with-pure-javascript | [Sketch] This blog was made with pure JavaScript | enus | 2024-09-21T18:14:57.044Z | Creating a modular, modern and dynamic blog with pure JavaScript, without TS or frameworks.
