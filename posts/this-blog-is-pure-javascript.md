@@ -241,7 +241,7 @@ Assim como qualquer outra coisa nessa aplicação, eu também utilizo uma variá
 <br>
 
 ```js
-    static theme = {
+static theme = {
     current: localStorage.getItem('theme-current') ?? 'dark',
     light: {
         primary: '#23272a',
