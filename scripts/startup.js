@@ -167,6 +167,12 @@ function updatePageContent() {
         document.body.style.backgroundColor = App.theme[App.theme.current].secondary;
         
         hljs.highlightAll();
+
+        if (App.currentPost) {
+            history.pushState({},"",window.location.origin + "?currentPost=" + App.currentPost[0])
+            return;
+        }
+
         history.pushState({},"",window.location.origin);
     }
 }
