@@ -2,7 +2,7 @@ class App {
     static currentPost = null;
 
     static consts = {
-        current: localStorage.getItem('language-current') ?? 'ptbr',
+        current: localStorage.getItem('language-current') ?? 'enus',
         ptbr: {
             title: "Scarlet Rose",
             subtitle: "Postagens",
