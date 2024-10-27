@@ -32,6 +32,7 @@ class App {
     static theme = {
         current: localStorage.getItem('theme-current') ?? 'dark',
         light: {
+            bgNavbar: 'url(\'/assets/sakura-anime.gif\')',
             primary: '#23272a',
             secondary: '#fffcfc',
             secondaryTransparent: 'rgba( 255, 255, 255, 0.6 )',
@@ -40,6 +41,7 @@ class App {
             backgroundHover: '#f6f7f8'
         },
         dark: {
+            bgNavbar: 'url(\'/assets/galaxy.gif\')',
             primary: '#e8e9ed',
             secondary: '#23272a',
             secondaryTransparent: 'rgba( 0, 0, 0, 0.6 )',

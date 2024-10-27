@@ -11,8 +11,7 @@ const Navbar = (contentLeft = "", contentRight = "") => {
         left: 0;
         right: 0;
         border-bottom: 1px solid ${App.theme[App.theme.current].borders};
-        background-color: ${App.theme[App.theme.current].secondaryTransparent};
-        background: url('/assets/galaxy.gif');
+        background-color: ${App.theme[App.theme.current].bgNavbar};
         background-size: cover;
         backdrop-filter: blur(10px);
     `;
