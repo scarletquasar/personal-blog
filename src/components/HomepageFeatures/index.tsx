@@ -1,52 +1,60 @@
-import type {ReactNode} from 'react';
-import clsx from 'clsx';
-import Heading from '@theme/Heading';
-import styles from './styles.module.css';
+import type { ReactNode } from "react";
+import clsx from "clsx";
+import Heading from "@theme/Heading";
+import styles from "./styles.module.css";
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  Svg: string;
   description: ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: "Olá, eu sou a Scarlet!",
+    Svg: "img/scarlet-face.png",
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Sou engenheira de software, já na área há mais de 8 anos. Amo
+        tecnologia, adoro trabalhar com pessoas e fico motivada quando consigo
+        fazer a diferença.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: "Boas vindas ao meu blog",
+    Svg: "img/scarlet-cute.png",
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Aqui você vai encontrar posts sobre tech, carreira e vídeos no meu canal
+        no YouTube com o objetivo de ajudar você a crescer na sua carreira.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: "Por onde começo?",
+    Svg: "img/scarlet-explosion.webp",
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Que tal começar vendo alguns dos meus <a>posts</a> ou talvez um vídeo do
+        meu <a>canal</a>? Se tiver alguma dúvida ou sugestão, pode entrar em{" "}
+        <a>contato</a>.
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ title, Svg, description }: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx("col col--4")}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img
+          src={Svg}
+          className={styles.featureSvg}
+          style={{
+            borderRadius: "100%",
+          }}
+        />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
@@ -58,12 +66,57 @@ function Feature({title, Svg, description}: FeatureItem) {
 
 export default function HomepageFeatures(): ReactNode {
   return (
-    <section className={styles.features}>
+    <section
+      className={styles.features}
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
       <div className="container">
+        <div
+          className="row"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            marginBottom: "2rem",
+          }}
+        >
+          <h1 style={{ fontSize: "5rem", fontWeight: "bold" }}>
+            Scarlet Codes
+          </h1>
+        </div>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
+        </div>
+        <div
+          className="row"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <button
+            className="button button--primary button--lg"
+            style={{
+              animation: "pulse 1.5s infinite",
+              transform: "scale(1)",
+              transition: "transform 0.2s",
+              fontSize: "1.5rem", // Increased font size
+              padding: "1rem 2rem", // Increased padding for a bigger button
+            }}
+            onMouseEnter={(e) =>
+              (e.currentTarget.style.transform = "scale(1.1)")
+            }
+            onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
+          >
+            Vamos lá!
+          </button>
         </div>
       </div>
     </section>

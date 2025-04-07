@@ -5,8 +5,9 @@ import type * as Preset from "@docusaurus/preset-classic";
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
+  title: "Scarlet Codes",
+  tagline:
+    "Sou engenheira de software, já na área há mais de 8 anos. Amo tecnologia, adoro trabalhar com pessoas e fico motivada vendo resultados que fazem a diferença. Falo inglês, português, japonês e libras, então adoro quebrar barreiras de comunicação. Hoje tô no Itaú, e além de desenvolver soluções, escrevo sobre como misturar tecnologia e negócios de um jeito criativo e estratégico. Meu foco? Capacitar pessoas, comunicar melhor e transformar desafios em oportunidades incríveis. Bora fazer acontecer! 🚀",
   favicon: "img/scarlet-face.png",
 
   url: "https://your-docusaurus-site.example.com",
