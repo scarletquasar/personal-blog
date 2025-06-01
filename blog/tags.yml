@@ -1,19 +1,19 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+carreira:
+  label: Carreira
+  permalink: /carreira
+  description: Questões sobre carreira, desenvolvimento profissional e oportunidades de trabalho
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+engenharia:
+  label: Engenharia
+  permalink: /engenharia
+  description: Questões sobre engenharia, desenvolvimento de software e práticas de codificação
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+arquitetura:
+  label: Arquitetura
+  permalink: /arquitetura
+  description: Questões sobre arquitetura de software, design de sistemas e padrões de projeto
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+offtopic:
+  label: Offtopic
+  permalink: /offtopic
+  description: Questões sobre tópicos diversos, discussões informais e assuntos não relacionados a tecnologia

@@ -1,12 +1,6 @@
 import type { ReactNode } from "react";
-import clsx from "clsx";
-import Link from "@docusaurus/Link";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
-import Heading from "@theme/Heading";
-
-import styles from "./index.module.css";
 
 function HomepageHeader() {
   return <></>;
@@ -16,7 +10,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={"Scarlet Codes"}
-      description="Description will go into a meta tag in <head />"
+      description="Aqui você vai encontrar posts sobre tech, carreira e vídeos no meu canal no YouTube com o objetivo de ajudar você a crescer na sua carreira."
     >
       <div
         style={{
