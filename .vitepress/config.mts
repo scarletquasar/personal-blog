@@ -9,6 +9,7 @@ const hostname = 'https://scarletrose.xyz'
 export default defineConfig({
   title: "Scarlet Rose",
   description: "Scarlet Rose's Blog",
+  base: '/personal-blog/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
