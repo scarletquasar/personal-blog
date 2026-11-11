@@ -4,13 +4,30 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  issues:
+    types: [opened, edited, labeled]
 
 permissions:
   contents: write
   deployments: write
 
 jobs:
+  check-deploy-issue:
+    runs-on: ubuntu-latest
+    if: |
+      github.event_name == 'issues' && 
+      (contains(github.event.issue.labels.*.name, 'deploy') || 
+       contains(github.event.issue.title, 'deploy'))
+    steps:
+      - name: Trigger deployment
+        run: echo "Deployment triggered by issue"
+
   build:
+    needs: [check-deploy-issue]
+    if: |
+      github.event_name != 'issues' || 
+      (contains(github.event.issue.labels.*.name, 'deploy') || 
+       contains(github.event.issue.title, 'deploy'))
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
