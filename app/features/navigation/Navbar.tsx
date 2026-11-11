@@ -20,7 +20,7 @@ function LayoutNavbar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="https://www.instagram.com/scarletrose/" target="_blank" rel="noreferrer" className="text-white">Instagram</Nav.Link>
+            <Nav.Link href="https://www.instagram.com/scarlet.quasar/" target="_blank" rel="noreferrer" className="text-white">Instagram</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
