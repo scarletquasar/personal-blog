@@ -3,38 +3,25 @@ import { Button } from 'react-bootstrap';
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Scarlet Rose - Personal Blog" },
+    { name: "description", content: "Welcome to Scarlet Rose's personal blog and portfolio!" },
   ];
 };
 
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1>Welcome to Remix</h1>
-      <Button>Test</Button>
+    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8", padding: "2rem" }}>
+      <h1>Welcome to Scarlet Rose</h1>
+      <p>This is my personal blog and portfolio. Follow me on Instagram for more updates!</p>
+      <Button href="https://www.instagram.com/scarletrose/" target="_blank" rel="noreferrer">Visit Instagram</Button>
       <ul>
         <li>
           <a
             target="_blank"
-            href="https://remix.run/tutorials/blog"
+            href="https://www.instagram.com/scarletrose/"
             rel="noreferrer"
           >
-            15m Quickstart Blog Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/jokes"
-            rel="noreferrer"
-          >
-            Deep Dive Jokes App Tutorial
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
+            Instagram Profile
           </a>
         </li>
       </ul>

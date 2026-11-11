@@ -13,15 +13,14 @@ function LayoutNavbar() {
         }}>
       <Container>
         <Navbar.Brand 
-            href="#home"
+            href="/"
             className="text-white">
-                Scarlet Codes
+                Scarlet Rose
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home" className="text-white">Home</Nav.Link>
-            <Nav.Link href="#link" className="text-white">Link</Nav.Link>
+          <Nav className="ms-auto">
+            <Nav.Link href="https://www.instagram.com/scarletrose/" target="_blank" rel="noreferrer" className="text-white">Instagram</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
