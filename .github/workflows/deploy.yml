@@ -1,4 +1,4 @@
-name: Deploy VitePress to GitHub Pages
+name: Deploy Personal Blog to GitHub Pages
 
 on:
   push:
@@ -7,26 +7,37 @@ on:
 
 permissions:
   contents: write
+  deployments: write
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v1
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      
       - name: Install dependencies
-        run: bun install --frozen-lockfile
-      - name: Build with RSS
-        run: bun run docs:build
+        run: pnpm install --frozen-lockfile
+      
+      - name: Build application
+        run: pnpm run build
+      
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .vitepress/dist
+          publish_dir: ./build/client
           publish_branch: pages
-          #cname: ${{ vars.CNAME }} # Optional: if you have a custom domain
 
